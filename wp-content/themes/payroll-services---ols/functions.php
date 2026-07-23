@@ -10,10 +10,15 @@ function payroll_services_setup() {
 add_action( 'after_setup_theme', 'payroll_services_setup' );
 
 function payroll_services_assets() {
-    wp_enqueue_style( 'payroll-main', get_template_directory_uri() . '/assets/css/style.css', [], '1.0.1' );
-    wp_enqueue_script( 'payroll-main', get_template_directory_uri() . '/assets/js/main.js', [], '1.0.1', true );
+    wp_enqueue_style( 'payroll-main', get_template_directory_uri() . '/assets/css/style.css', [], '1.0.2' );
+    wp_enqueue_script( 'payroll-main', get_template_directory_uri() . '/assets/js/main.js', [], '1.0.2', true );
 }
 add_action( 'wp_enqueue_scripts', 'payroll_services_assets' );
+
+function payroll_services_disable_customizer_css() {
+    remove_action( 'wp_head', 'wp_custom_css_cb', 101 );
+}
+add_action( 'wp_enqueue_scripts', 'payroll_services_disable_customizer_css', 20 );
 
 function payroll_services_create_pages() {
     $pages = [

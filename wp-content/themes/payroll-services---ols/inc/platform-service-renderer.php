@@ -73,7 +73,7 @@ function payroll_render_platform_service_page( array $page ) {
 .pa-section .section-head h2{color:#fff;}
 .pa-section .section-head p{color:rgba(255,255,255,.65);}
 .pa-section .eyebrow{background:rgba(255,255,255,.1);color:#fff;}
-.pa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.pa-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:1fr;gap:28px;}
 .pa-card{background:rgba(255,255,255,.04);backdrop-filter:blur(6px);border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.1);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;display:flex;flex-direction:column;}
 .pa-card:hover{transform:translateY(-10px);box-shadow:0 30px 60px rgba(0,0,0,.45);border-color:rgba(255,255,255,.25);}
 .pa-head{position:relative;padding:34px 28px 58px;color:#fff;overflow:hidden;background:linear-gradient(135deg,#2f5bff 0%,#074b85 100%);}

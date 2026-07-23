@@ -57,6 +57,20 @@ img{ max-width:100%; display:block; }
 ul{ margin:0; padding:0; list-style:none; }
 button{ font-family:inherit; cursor:pointer; }
 
+.custom-logo-link img,
+.site-logo img,
+.navbar .brand img{
+  max-height:70px;
+  width:auto;
+  object-fit:contain;
+}
+.mobile-nav .custom-logo-link img,
+.mobile-nav .brand img{
+  max-height:36px;
+  width:auto;
+  object-fit:contain;
+}
+
 .container{ width:100%; max-width:var(--container); margin:0 auto; padding:0 24px; }
 .section{ padding:100px 0; }
 .section-tight{ padding:64px 0; }

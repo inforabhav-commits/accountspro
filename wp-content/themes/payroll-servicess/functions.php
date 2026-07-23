@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Theme version constant — bump this on every asset change to bust the cache. */
-define( 'PAYROLL_THEME_VERSION', '1.0.1' );
+define( 'PAYROLL_THEME_VERSION', '1.0.2' );
 define( 'PAYROLL_THEME_DIR', get_template_directory() );
 define( 'PAYROLL_THEME_URI', get_template_directory_uri() );
 
@@ -140,6 +140,11 @@ function payroll_enqueue_assets() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'payroll_enqueue_assets' );
+
+function payroll_disable_customizer_css() {
+	remove_action( 'wp_head', 'wp_custom_css_cb', 101 );
+}
+add_action( 'wp_enqueue_scripts', 'payroll_disable_customizer_css', 20 );
 
 /**
  * Register widget/sidebar areas: 3 footer columns + a blog/page sidebar.
