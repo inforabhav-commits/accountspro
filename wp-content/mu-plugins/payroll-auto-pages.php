@@ -18,6 +18,34 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_action( 'init', 'payroll_auto_create_pages', 20 );
 
+add_filter( 'the_content', 'payroll_auto_keep_accounting_process_four_steps', 9 );
+
+function payroll_auto_keep_accounting_process_four_steps( $content ) {
+	if ( false === strpos( $content, 'Managing Daily Accounting' ) ) {
+		return $content;
+	}
+
+	$content = preg_replace(
+		'#\s*<div\s+class=(["\'])p-step\1>\s*<div\s+class=(["\'])p-num\2>\s*3\s*</div>\s*<h4>\s*Managing Daily Accounting\s*</h4>\s*<p>.*?</p>\s*</div>#is',
+		'',
+		$content
+	);
+
+	$content = preg_replace(
+		'#(<div\s+class=(["\'])p-num\2>\s*)4(\s*</div>\s*<h4>\s*Financial Reporting\s*</h4>)#i',
+		'${1}3${3}',
+		$content
+	);
+
+	$content = preg_replace(
+		'#(<div\s+class=(["\'])p-num\2>\s*)5(\s*</div>\s*<h4>\s*Continuous Support\s*</h4>)#i',
+		'${1}4${3}',
+		$content
+	);
+
+	return $content;
+}
+
 function payroll_auto_create_pages() {
 
 	// Only run for logged-in admins to avoid any front-end performance impact,
