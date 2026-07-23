@@ -141,11 +141,6 @@ function payroll_enqueue_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'payroll_enqueue_assets' );
 
-function payroll_disable_customizer_css() {
-	remove_action( 'wp_head', 'wp_custom_css_cb', 101 );
-}
-add_action( 'wp_enqueue_scripts', 'payroll_disable_customizer_css', 20 );
-
 /**
  * Register widget/sidebar areas: 3 footer columns + a blog/page sidebar.
  */

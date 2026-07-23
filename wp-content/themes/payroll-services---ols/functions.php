@@ -15,11 +15,6 @@ function payroll_services_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'payroll_services_assets' );
 
-function payroll_services_disable_customizer_css() {
-    remove_action( 'wp_head', 'wp_custom_css_cb', 101 );
-}
-add_action( 'wp_enqueue_scripts', 'payroll_services_disable_customizer_css', 20 );
-
 function payroll_services_create_pages() {
     $pages = [
         'home'                    => [ 'title' => 'Home', 'template' => 'default' ],
