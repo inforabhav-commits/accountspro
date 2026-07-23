@@ -1,0 +1,153 @@
+[19-Jul-2026 19:55:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/admin.php(35): require_once('/home/u55861862...')
+#8 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/index.php(10): require_once('/home/u55861862...')
+#9 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:55:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/admin.php(35): require_once('/home/u55861862...')
+#8 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/index.php(10): require_once('/home/u55861862...')
+#9 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:55:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/admin.php(35): require_once('/home/u55861862...')
+#8 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/index.php(10): require_once('/home/u55861862...')
+#9 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:55:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/admin.php(35): require_once('/home/u55861862...')
+#8 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/index.php(10): require_once('/home/u55861862...')
+#9 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:55:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/admin.php(35): require_once('/home/u55861862...')
+#8 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/index.php(10): require_once('/home/u55861862...')
+#9 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:56:03 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/admin.php(35): require_once('/home/u55861862...')
+#8 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/about.php(10): require_once('/home/u55861862...')
+#9 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:56:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/admin-ajax.php(22): require_once('/home/u55861862...')
+#8 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:57:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/admin-ajax.php(22): require_once('/home/u55861862...')
+#8 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:58:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/admin-ajax.php(22): require_once('/home/u55861862...')
+#8 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:58:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-cron.php(46): require_once('/home/u55861862...')
+#8 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:59:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-admin/admin-ajax.php(22): require_once('/home/u55861862...')
+#8 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[19-Jul-2026 19:59:05 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "PGCONTENT" in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php:1996
+Stack trace:
+#0 /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php(29): payroll_auto_pages_data()
+#1 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(341): payroll_auto_create_pages()
+#2 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#3 /home/u558618626/domains/accountingassistpro.com/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#4 /home/u558618626/domains/accountingassistpro.com/public_html/wp-settings.php(771): do_action()
+#5 /home/u558618626/domains/accountingassistpro.com/public_html/wp-config.php(109): require_once('/home/u55861862...')
+#6 /home/u558618626/domains/accountingassistpro.com/public_html/wp-load.php(50): require_once('/home/u55861862...')
+#7 /home/u558618626/domains/accountingassistpro.com/public_html/wp-cron.php(46): require_once('/home/u55861862...')
+#8 {main}
+  thrown in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/mu-plugins/payroll-auto-pages.php on line 1996
+[23-Jul-2026 07:56:57 UTC] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/plugins/ai-engine/classes/modules/files.php on line 881
+[23-Jul-2026 07:56:57 UTC] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u558618626/domains/accountingassistpro.com/public_html/wp-content/plugins/ai-engine/classes/modules/files.php on line 885
+[23-Jul-2026 07:59:33 UTC] Cron reschedule event error for hook: mwai_tasks_internal_run, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"one_minute","args":[],"interval":60}

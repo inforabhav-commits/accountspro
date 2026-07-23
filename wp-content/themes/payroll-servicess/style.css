@@ -1,0 +1,22 @@
+/*
+Theme Name: Payroll Servicess
+Theme URI: https://payrollservicess.com
+Author: Payroll Servicess Dev Team
+Author URI: https://payrollservicess.com
+Description: A custom, production-ready WordPress theme for Payroll Servicess — a bookkeeping, accounting, payroll, and tax firm. Converted from a static HTML site into a fully dynamic, editable WordPress theme with theme customizer options, dynamic menus, widget areas, and a custom Blog/Resources/Case Studies system. Pixel-preserved design, fully responsive, HTML5, translation ready.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: payroll-servicess
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, responsive-layout
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+NOTE: This file intentionally contains only the required theme header comment.
+All actual CSS rules live in /assets/css/theme-style.css and are loaded through
+wp_enqueue_style() in functions.php, per WordPress asset-management best practice.
+*/

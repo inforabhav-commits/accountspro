@@ -1,0 +1,13 @@
+/*
+Theme Name: Payroll Servicess Theme
+Theme URI: https://example.com/parolls-theme
+Author: AI Assistant
+Description: A custom WordPress theme converted from the existing Payroll Servicess static website.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 8.1
+Text Domain: parolls
+*/
+
+@import url('assets/css/style.css');

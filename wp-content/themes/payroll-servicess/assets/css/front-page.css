@@ -1,0 +1,231 @@
+/* Front-page-only styles (hero, Pro Assist cards, typewriter effect) — extracted from the original index.html inline <style> block */
+.hero{
+  position:relative; overflow:hidden;
+  background:#0A1330;
+  padding:180px 0 70px; color:#fff;
+}
+.hero h1{
+  color:#fff;
+  font-size:clamp(44px, 6vw, 76px);   /* was clamp(34px,4.6vw,58px) */
+  font-weight:700;
+  letter-spacing:-0.02em;
+  line-height:1.08;                    /* thoda tighter, bade text ke liye zaroori */
+  margin-bottom:26px;
+}
+
+.hero p.lead{
+  color:rgba(255,255,255,0.85);
+  font-size:clamp(18px, 1.6vw, 22px);  /* was fixed 18px */
+  line-height:1.5;
+  max-width:560px;                     /* thoda wide kiya bade h1 ke saath balance ke liye */
+  margin-bottom:34px;
+}
+.hero::before{
+  content:'';
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 900px 700px at 12% 55%, rgba(47,91,255,0.85), transparent 60%),
+    radial-gradient(ellipse 600px 500px at 28% 25%, rgba(80,120,255,0.5), transparent 55%);
+  filter: blur(30px);
+}
+.hero-grid{ position:relative; z-index:1; }
+
+.hero-visual{
+  position:relative;
+  height:420px;
+}
+.collage-item{
+  position:absolute; border-radius:16px; overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,0.35);
+}
+.collage-item img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+.ci-1{ top:0; left:20%; width:38%; height:160px; z-index:2; }
+.ci-2{ top:150px; left:0; width:42%; height:180px; z-index:3; }
+.ci-3{ top:0; right:0; width:32%; height:330px; z-index:1; }
+.ci-4{ bottom:0; left:24%; width:40%; z-index:2; }
+
+.ci-card{
+  background:#0F1B3D; color:#fff; border-radius:16px; padding:18px 20px;
+}
+.ci-card-label{ font-size:12px; color:rgba(255,255,255,0.65); }
+.ci-card-amount{
+  font-family:var(--font-display); font-size:28px; font-weight:700;
+  color:#1E8E5A; margin:6px 0;
+}
+.ci-card p{ font-size:12.5px; color:rgba(255,255,255,0.6); margin:0; }
+
+/* floating search pill */
+.hero-search-float{
+  position:relative; z-index:5;
+  grid-column:1 / -1;
+  margin-top:-60px;
+  max-width:640px;
+  background:#fff; border-radius:999px;
+  display:flex; align-items:center; gap:14px;
+  padding:10px 10px 10px 24px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.4);
+}
+.hero-search-icon{ color:#2F5BFF; font-size:16px; }
+.hero-search-float input{
+  flex:1; border:none; outline:none; font-size:15px; color:#1D1D1D; background:transparent;
+}
+.hero-search-float button{
+  width:44px; height:44px; border-radius:50%; background:#1D1D1D; color:#fff;
+  border:none; display:flex; align-items:center; justify-content:center; flex:none;
+}
+
+@media (max-width:1080px){
+  .hero-visual{ height:340px; margin-top:20px; }
+  .hero-search-float{ margin-top:20px; }
+}
+@media (max-width:768px){
+  .hero-visual{ display:none; } /* collage hides on small screens, keeps it clean */
+  .hero-search-float{ margin-top:0; }
+}
+.typewriter{
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  width:0;
+  animation: typing 2.8s steps(40, end) forwards;
+  /* border-right aur blink-cursor animation hata diya */
+}
+
+@keyframes typing{
+  from{ width:0; }
+  to{ width:100%; }
+}
+/* ---------- Pro Assist Services section ---------- */
+.pa-section{
+  position:relative;
+  overflow:hidden;
+  padding:110px 0;
+  background:#0A1330;
+}
+.pa-section::before{
+  content:'';
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 800px 600px at 85% 15%, rgba(47,91,255,0.35), transparent 60%),
+    radial-gradient(ellipse 700px 550px at 10% 90%, rgba(30,142,90,0.25), transparent 55%);
+  filter:blur(10px);
+}
+.pa-section .section-head{ position:relative; z-index:1; }
+.pa-section .section-head h2{ color:#fff; }
+.pa-section .section-head p{ color:rgba(255,255,255,0.65); }
+.pa-section .eyebrow{
+  background:rgba(255,255,255,0.1); color:#fff;
+}
+.pa-section .eyebrow i{ color:var(--c-accent); }
+
+/*.pa-grid{*/
+/*  position:relative; z-index:1;*/
+/*  display:grid;*/
+/*  grid-template-columns:repeat(3,1fr);*/
+/*  gap:28px;*/
+/*}*/
+
+/*.pa-card{*/
+/*  background:rgba(255,255,255,0.04);*/
+/*  backdrop-filter:blur(6px);*/
+/*  border-radius:22px;*/
+/*  overflow:hidden;*/
+/*  border:1px solid rgba(255,255,255,0.1);*/
+/*  transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;*/
+/*}*/
+
+.pa-grid{
+  position:relative; 
+  z-index:1;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:28px;
+}
+
+.pa-card{
+  background:rgba(255,255,255,0.04);
+  backdrop-filter:blur(6px);
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,0.1);
+  transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  
+  /* ye naya add kiya - width control ke liye */
+  flex:0 1 calc(33.333% - 28px * 2 / 3);
+  box-sizing:border-box;
+}
+.pa-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 30px 60px rgba(0,0,0,0.45);
+  border-color:rgba(255,255,255,0.25);
+}
+
+.pa-head{
+  position:relative;
+  padding:34px 28px 60px;
+  color:#fff;
+  overflow:hidden;
+}
+.pa-head::after{
+  content:'';
+  position:absolute; left:0; right:0; bottom:-1px;
+  background:var(--c-surface, #fff);
+  border-radius:24px 24px 0 0;
+}
+.pa-icon{
+  width:52px; height:52px;
+  border-radius:14px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:20px; margin-bottom:20px;
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(4px);
+  position:relative; z-index:1;
+  border:1px solid rgba(255,255,255,0.25);
+}
+.pa-head h3{
+  color:#fff;
+  font-size:21px;
+  position:relative; z-index:1;
+  margin-bottom:0;
+  line-height:1.3;
+}
+
+.pa-body{
+  background:var(--c-surface, #fff);
+  padding:8px 28px 30px;
+  position:relative;
+}
+.pa-body ul{ margin-bottom:0; }
+.pa-body li{
+  display:flex; align-items:center; gap:12px;
+  font-size:14px; color:var(--c-text);
+  padding:11px 0;
+  border-bottom:1px solid var(--c-border);
+}
+.pa-body li:last-child{ border-bottom:none; }
+.pa-body li .li-dot{
+  width:22px; height:22px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(0,166,166,0.12);
+  color:var(--c-accent);
+  font-size:10px;
+  flex:none;
+}
+
+/* gradient variants, tuned to feel part of the same navy family */
+.pa-bookkeeping{ background:linear-gradient(135deg,#2f5bff 0%, #074b85 100%); }
+.pa-accounting{ background:linear-gradient(135deg,#2f5bff 0%, #074b85 100%); }
+.pa-payroll{ background:linear-gradient(135deg,#2f5bff 0%, #074b85 100%); }
+.pa-tax{ background:linear-gradient(135deg, #2f5bff 0%, #074b85 100%); }
+.pa-cloud{ background:linear-gradient(135deg, #2f5bff 0%, #074b85 100%); }
+
+@media (max-width:1080px){
+  .pa-grid{ grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:768px){
+  .pa-grid{ grid-template-columns:1fr; }
+  .pa-section{ padding:70px 0; }
+}
+
