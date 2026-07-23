@@ -223,6 +223,12 @@ button{ font-family:inherit; cursor:pointer; }
 /* ---------- Logos strip ---------- */
 .logo-strip{ padding:44px 0; background:var(--c-surface); border-top:1px solid var(--c-border); border-bottom:1px solid var(--c-border); }
 .logo-strip .label{ text-align:center; font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--c-text-muted); margin-bottom:26px; }
+.logo-strip .container > p{
+  max-width:1280px;
+  margin:0 auto;
+  font-size:16px !important;
+  line-height:1.75;
+}
 .logo-row{ display:flex; justify-content:space-between; align-items:center; gap:30px; flex-wrap:wrap; opacity:.75; }
 .logo-row span{ font-family:var(--font-display); font-weight:700; font-size:18px; color:var(--c-text-muted); letter-spacing:-.02em; }
 

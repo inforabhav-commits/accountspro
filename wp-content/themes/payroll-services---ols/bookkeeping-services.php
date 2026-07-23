@@ -155,6 +155,7 @@
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
+  align-items:stretch;
   gap:28px;
 }
 
@@ -165,9 +166,9 @@
   overflow:hidden;
   border:1px solid rgba(255,255,255,0.1);
   transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
-  
-  /* ye naya add kiya - width control ke liye */
   flex:0 1 calc(33.333% - 28px * 2 / 3);
+  display:flex;
+  flex-direction:column;
   box-sizing:border-box;
 }
 .pa-card:hover{
@@ -210,8 +211,11 @@
   background:var(--c-surface, #fff);
   padding:8px 28px 30px;
   position:relative;
+  flex:1;
+  display:flex;
+  flex-direction:column;
 }
-.pa-body ul{ margin-bottom:0; }
+.pa-body ul{ margin-top:auto; margin-bottom:0; }
 .pa-body li{
   display:flex; align-items:center; gap:12px;
   font-size:14px; color:var(--c-text);
@@ -236,10 +240,10 @@
 .pa-cloud{ background:linear-gradient(135deg, #2f5bff 0%, #074b85 100%); }
 
 @media (max-width:1080px){
-  .pa-grid{ grid-template-columns:repeat(2,1fr); }
+  .pa-card{ flex-basis:calc(50% - 14px); }
 }
 @media (max-width:768px){
-  .pa-grid{ grid-template-columns:1fr; }
+  .pa-card{ flex-basis:100%; }
   .pa-section{ padding:70px 0; }
 }
 
@@ -424,7 +428,7 @@
 
  <section class="logo-strip">
   <div class="container">
-    <p style="font-size: 26px;
+    <p style="font-size: 16px;
     text-align: center;
     font-weight: 300;
     color: #111;">Managing your books shouldn't take time away from running your business. Our professional bookkeeping services help you maintain accurate financial records, track daily transactions, and stay prepared for tax season. Whether you're a startup, small business, or growing enterprise, we provide reliable bookkeeping solutions tailored to your needs.</p>
@@ -494,7 +498,7 @@
         </div>
       </div>
 
-      <div class="pa-card reveal" style="margin-top: 4%;">
+      <div class="pa-card reveal">
         <div class="pa-head pa-tax">
           <div class="pa-icon"><i class="fa-solid fa-building-columns"></i></div>
           <h3>Bank Reconciliation</h3>
@@ -511,7 +515,7 @@
         </div>
       </div>
 
-      <div class="pa-card reveal" style="margin-top: 4%;">
+      <div class="pa-card reveal">
         <div class="pa-head pa-cloud">
           <div class="pa-icon"><i class="fa-solid fa-list-check"></i></div>
           <h3>General Ledger Management</h3>

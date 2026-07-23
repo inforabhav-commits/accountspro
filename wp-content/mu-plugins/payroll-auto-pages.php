@@ -538,7 +538,7 @@ PGCONTENT;
         </div>
       </div>
 
-      <div class="pa-card reveal" style="margin-top: 4%;">
+      <div class="pa-card reveal">
         <div class="pa-head pa-tax">
           <div class="pa-icon"><i class="fa-solid fa-building-columns"></i></div>
           <h3>Bank Reconciliation</h3>
@@ -555,7 +555,7 @@ PGCONTENT;
         </div>
       </div>
 
-      <div class="pa-card reveal" style="margin-top: 4%;">
+      <div class="pa-card reveal">
         <div class="pa-head pa-cloud">
           <div class="pa-icon"><i class="fa-solid fa-list-check"></i></div>
           <h3>General Ledger Management</h3>
@@ -1039,7 +1039,7 @@ PGCONTENT;
         </div>
       </div>
 
-      <div class="pa-card reveal" style="margin-top: 4%;">
+      <div class="pa-card reveal">
         <div class="pa-head pa-tax">
           <div class="pa-icon"><i class="fa-solid fa-calendar-check"></i></div>
           <h3>Month-End &amp; Year-End Closing</h3>

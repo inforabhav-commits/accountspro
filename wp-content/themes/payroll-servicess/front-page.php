@@ -48,7 +48,7 @@ get_header();
 
 <section class="logo-strip">
 	<div class="container">
-		<p style="font-size: 26px; text-align: center; font-weight: 300; color: #111;">
+		<p style="font-size: 16px; text-align: center; font-weight: 300; color: #111;">
 			<?php echo esc_html( payroll_mod( 'payroll_hero_intro_text', 'Pro Assist provides reliable accounting, bookkeeping, payroll, and tax services with personalized support, helping businesses save time, stay compliant, and grow with confidence.' ) ); ?>
 		</p>
 	</div>

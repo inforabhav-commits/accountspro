@@ -155,6 +155,7 @@
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
+  align-items:stretch;
   gap:28px;
 }
 
@@ -165,9 +166,9 @@
   overflow:hidden;
   border:1px solid rgba(255,255,255,0.1);
   transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
-  
-  /* ye naya add kiya - width control ke liye */
   flex:0 1 calc(33.333% - 28px * 2 / 3);
+  display:flex;
+  flex-direction:column;
   box-sizing:border-box;
 }
 .pa-card:hover{
@@ -210,8 +211,11 @@
   background:var(--c-surface, #fff);
   padding:8px 28px 30px;
   position:relative;
+  flex:1;
+  display:flex;
+  flex-direction:column;
 }
-.pa-body ul{ margin-bottom:0; }
+.pa-body ul{ margin-top:auto; margin-bottom:0; }
 .pa-body li{
   display:flex; align-items:center; gap:12px;
   font-size:14px; color:var(--c-text);
@@ -236,10 +240,10 @@
 .pa-cloud{ background:linear-gradient(135deg, #2f5bff 0%, #074b85 100%); }
 
 @media (max-width:1080px){
-  .pa-grid{ grid-template-columns:repeat(2,1fr); }
+  .pa-card{ flex-basis:calc(50% - 14px); }
 }
 @media (max-width:768px){
-  .pa-grid{ grid-template-columns:1fr; }
+  .pa-card{ flex-basis:100%; }
   .pa-section{ padding:70px 0; }
 }
 
@@ -424,7 +428,7 @@
 
  <section class="logo-strip">
   <div class="container">
-    <p style="font-size: 26px;
+    <p style="font-size: 16px;
     text-align: center;
     font-weight: 300;
     color: #111;">Managing business finances requires more than recording transactions—it requires accurate reporting, financial analysis, and ongoing compliance. Assist Pro accounting services help businesses maintain organized financial records while providing valuable insights that support informed decision-making. Whether you're a startup, a growing company, or an established business, our accounting experts ensure every financial detail is managed efficiently so you can gain complete visibility into your business performance.</p>
@@ -494,7 +498,7 @@
         </div>
       </div>
 
-      <div class="pa-card reveal" style="margin-top: 4%;">
+      <div class="pa-card reveal">
         <div class="pa-head pa-tax">
           <div class="pa-icon"><i class="fa-solid fa-calendar-check"></i></div>
           <h3>Month-End &amp; Year-End Closing</h3>
@@ -598,8 +602,6 @@
         <div class="p-step"><div class="p-num">2</div><h4>Organizing Financial Data</h4><p>We collect and review financial records, invoices, bank statements, and supporting documents.</p></div>
         <div class="p-step"><div class="p-num">3</div><h4>Managing Daily Accounting</h4><p>Our experts maintain accurate accounting records while tracking receivables, payables, and financial transactions.</p></div>
         <div class="p-step"><div class="p-num">4</div><h4>Financial Reporting</h4><p>Receive detailed monthly reports and financial statements that provide complete visibility into your business performance.</p></div>
-        <div class="p-step"><div class="p-num">5</div><h4>Continuous Support</h4><p>Our accounting team remains available throughout the year to answer questions and support your business growth.</p></div>
-        
       </div>
     </div>
   </div>
