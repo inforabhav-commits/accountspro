@@ -299,7 +299,7 @@
 
 <li><a href="#"><i class="fa-solid fa-receipt"></i> TurboTax</a></li>
 
-<li><a href="#"><i class="fa-solid fa-cloud"></i> Cloud Hosting Services</a></li>
+<li><a href="<?php echo esc_url( home_url( '/cloud-hosting-services/' ) ); ?>"><i class="fa-solid fa-cloud"></i> Cloud Hosting Services</a></li>
 
 
         </ul>
@@ -600,8 +600,8 @@
       <div class="process-steps">
         <div class="p-step"><div class="p-num">1</div><h4>Understanding Your Business</h4><p>We learn about your operations, accounting requirements, and financial goals.</p></div>
         <div class="p-step"><div class="p-num">2</div><h4>Organizing Financial Data</h4><p>We collect and review financial records, invoices, bank statements, and supporting documents.</p></div>
-        <div class="p-step"><div class="p-num">3</div><h4>Managing Daily Accounting</h4><p>Our experts maintain accurate accounting records while tracking receivables, payables, and financial transactions.</p></div>
-        <div class="p-step"><div class="p-num">4</div><h4>Financial Reporting</h4><p>Receive detailed monthly reports and financial statements that provide complete visibility into your business performance.</p></div>
+        <div class="p-step"><div class="p-num">3</div><h4>Financial Reporting</h4><p>Receive detailed monthly reports and financial statements that provide complete visibility into your business performance.</p></div>
+        <div class="p-step"><div class="p-num">4</div><h4>Continuous Support</h4><p>Our accounting team remains available throughout the year to answer questions and support your business growth.</p></div>
       </div>
     </div>
   </div>

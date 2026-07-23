@@ -299,7 +299,7 @@
 
 <li><a href="#"><i class="fa-solid fa-receipt"></i> TurboTax</a></li>
 
-<li><a href="#"><i class="fa-solid fa-cloud"></i> Cloud Hosting Services</a></li>
+<li><a href="<?php echo esc_url( home_url( '/cloud-hosting-services/' ) ); ?>"><i class="fa-solid fa-cloud"></i> Cloud Hosting Services</a></li>
 
 
         </ul>

@@ -15,6 +15,11 @@ function payroll_services_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'payroll_services_assets' );
 
+function payroll_services_disable_customizer_css() {
+    remove_action( 'wp_head', 'wp_custom_css_cb', 101 );
+}
+add_action( 'wp_enqueue_scripts', 'payroll_services_disable_customizer_css', 20 );
+
 function payroll_services_create_pages() {
     $pages = [
         'home'                    => [ 'title' => 'Home', 'template' => 'default' ],
@@ -23,6 +28,10 @@ function payroll_services_create_pages() {
         'contact'                 => [ 'title' => 'Contact', 'template' => 'page-templates/template-contact.php' ],
         'accounting-services'     => [ 'title' => 'Accounting Services', 'template' => 'page-templates/template-accounting-services.php' ],
         'bookkeeping-services'    => [ 'title' => 'Bookkeeping Services', 'template' => 'page-templates/template-bookkeeping-services.php' ],
+        'cloud-hosting-services'  => [ 'title' => 'Cloud Hosting Services', 'template' => 'page-templates/template-cloud-hosting-services.php' ],
+        'quickbooks'              => [ 'title' => 'QuickBooks', 'template' => 'page-templates/template-quickbooks.php' ],
+        'sage'                    => [ 'title' => 'Sage', 'template' => 'page-templates/template-sage.php' ],
+        'xero'                    => [ 'title' => 'Xero', 'template' => 'page-templates/template-xero.php' ],
         'blog'                    => [ 'title' => 'Blog', 'template' => 'page-templates/template-blog.php' ],
         'faq'                     => [ 'title' => 'FAQ', 'template' => 'page-templates/template-faq.php' ],
         'privacy-policy'          => [ 'title' => 'Privacy Policy', 'template' => 'page-templates/template-privacy-policy.php' ],
@@ -82,3 +91,73 @@ function payroll_services_admin_notice() {
     }
 }
 add_action( 'admin_notices', 'payroll_services_admin_notice' );
+
+function payroll_services_ensure_platform_pages() {
+    if ( ! current_user_can( 'manage_options' ) ) {
+        return;
+    }
+
+    $pages = [
+        'cloud-hosting-services' => [ 'title' => 'Cloud Hosting Services', 'template' => 'page-templates/template-cloud-hosting-services.php' ],
+        'quickbooks'             => [ 'title' => 'QuickBooks', 'template' => 'page-templates/template-quickbooks.php' ],
+        'sage'                   => [ 'title' => 'Sage', 'template' => 'page-templates/template-sage.php' ],
+        'xero'                   => [ 'title' => 'Xero', 'template' => 'page-templates/template-xero.php' ],
+    ];
+
+    $created = false;
+
+    foreach ( $pages as $slug => $data ) {
+        $page = get_page_by_path( $slug );
+
+        if ( ! $page ) {
+            $page_id = wp_insert_post( [
+                'post_title'   => $data['title'],
+                'post_name'    => $slug,
+                'post_status'  => 'publish',
+                'post_type'    => 'page',
+                'post_content' => '',
+            ] );
+
+            if ( $page_id && ! is_wp_error( $page_id ) ) {
+                update_post_meta( $page_id, '_wp_page_template', $data['template'] );
+                $created = true;
+            }
+
+            continue;
+        }
+
+        update_post_meta( $page->ID, '_wp_page_template', $data['template'] );
+    }
+
+    if ( $created ) {
+        flush_rewrite_rules();
+    }
+}
+add_action( 'admin_init', 'payroll_services_ensure_platform_pages' );
+
+function payroll_services_clean_accounting_process_step( $content ) {
+    if ( ! is_page( 'accounting-services' ) ) {
+        return $content;
+    }
+
+    $content = preg_replace(
+        '#\s*<div class="p-step"><div class="p-num">3</div><h4>Managing Daily Accounting</h4><p>Our experts maintain accurate accounting records while tracking receivables, payables, and financial transactions\.</p></div>#',
+        '',
+        $content
+    );
+
+    $content = str_replace(
+        '<div class="p-step"><div class="p-num">4</div><h4>Financial Reporting</h4>',
+        '<div class="p-step"><div class="p-num">3</div><h4>Financial Reporting</h4>',
+        $content
+    );
+
+    $content = str_replace(
+        '<div class="p-step"><div class="p-num">5</div><h4>Continuous Support</h4>',
+        '<div class="p-step"><div class="p-num">4</div><h4>Continuous Support</h4>',
+        $content
+    );
+
+    return $content;
+}
+add_filter( 'the_content', 'payroll_services_clean_accounting_process_step', 20 );
