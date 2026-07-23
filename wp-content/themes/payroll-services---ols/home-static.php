@@ -185,6 +185,8 @@
 .pa-head::after{
   content:'';
   position:absolute; left:0; right:0; bottom:-1px;
+  width:auto;
+  height:54px;
   background:var(--c-surface, #fff);
   border-radius:24px 24px 0 0;
 }

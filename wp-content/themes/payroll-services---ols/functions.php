@@ -10,8 +10,8 @@ function payroll_services_setup() {
 add_action( 'after_setup_theme', 'payroll_services_setup' );
 
 function payroll_services_assets() {
-    wp_enqueue_style( 'payroll-main', get_template_directory_uri() . '/assets/css/style.css', [], '1.0.3' );
-    wp_enqueue_script( 'payroll-main', get_template_directory_uri() . '/assets/js/main.js', [], '1.0.3', true );
+    wp_enqueue_style( 'payroll-main', get_template_directory_uri() . '/assets/css/style.css', [], '1.0.4' );
+    wp_enqueue_script( 'payroll-main', get_template_directory_uri() . '/assets/js/main.js', [], '1.0.4', true );
 }
 add_action( 'wp_enqueue_scripts', 'payroll_services_assets' );
 

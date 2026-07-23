@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Theme version constant — bump this on every asset change to bust the cache. */
-define( 'PAYROLL_THEME_VERSION', '1.0.3' );
+define( 'PAYROLL_THEME_VERSION', '1.0.4' );
 define( 'PAYROLL_THEME_DIR', get_template_directory() );
 define( 'PAYROLL_THEME_URI', get_template_directory_uri() );
 
