@@ -16,6 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+define( 'PAYROLL_AUTO_PAGES_CONTENT_VERSION', '20260724-hero-steps-1' );
+
 add_action( 'init', 'payroll_auto_create_pages', 20 );
 
 add_filter( 'the_content', 'payroll_auto_keep_accounting_process_four_steps', 9 );
@@ -55,11 +57,19 @@ function payroll_auto_create_pages() {
 	}
 
 	$pages = payroll_auto_pages_data();
+	$should_sync_content = get_option( 'payroll_auto_pages_content_version' ) !== PAYROLL_AUTO_PAGES_CONTENT_VERSION;
 
 	foreach ( $pages as $slug => $data ) {
 		$existing = get_page_by_path( $slug, OBJECT, 'page' );
 		if ( $existing ) {
-			continue; // Never overwrite an existing page.
+			if ( $should_sync_content ) {
+				wp_update_post( array(
+					'ID'           => $existing->ID,
+					'post_title'   => $data['title'],
+					'post_content' => $data['content'],
+				) );
+			}
+			continue;
 		}
 
 		wp_insert_post( array(
@@ -71,6 +81,10 @@ function payroll_auto_create_pages() {
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
 		) );
+	}
+
+	if ( $should_sync_content ) {
+		update_option( 'payroll_auto_pages_content_version', PAYROLL_AUTO_PAGES_CONTENT_VERSION );
 	}
 }
 

@@ -224,9 +224,48 @@ button{ font-family:inherit; cursor:pointer; }
 @keyframes float2{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(10px); } }
 
 /* small hero used on inner pages */
-.hero-sm{ padding:150px 0 70px; }
-.hero-sm h1{ font-size:clamp(30px,4vw,46px); margin-bottom:14px; }
-.hero-sm p{ color:rgba(255,255,255,0.82); font-size:16.5px; max-width:600px; }
+.hero-sm{
+  min-height:430px;
+  padding:150px 0 78px;
+  display:flex;
+  align-items:center;
+}
+.hero-sm::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg, rgba(10,19,48,.98) 0%, rgba(10,19,48,.86) 42%, rgba(10,19,48,.36) 72%, rgba(10,19,48,.72) 100%),
+    url('../images/service-hero-finance.png') right center / cover no-repeat;
+  opacity:.96;
+  pointer-events:none;
+}
+.hero-sm::before{
+  z-index:1;
+  opacity:.8;
+}
+.hero-sm .container{
+  max-width:var(--container);
+  position:relative;
+  z-index:2;
+}
+.hero-sm .eyebrow{
+  border:1px solid rgba(255,255,255,.18);
+  backdrop-filter:blur(8px);
+}
+.hero-sm h1{
+  max-width:720px;
+  color:#fff;
+  font-size:clamp(36px,4.8vw,62px);
+  line-height:1.05;
+  margin-bottom:18px;
+}
+.hero-sm p{
+  color:rgba(255,255,255,0.86);
+  font-size:17px;
+  line-height:1.7;
+  max-width:650px;
+}
 
 /* breadcrumb */
 .breadcrumb-bar{ background:var(--c-surface); border-bottom:1px solid var(--c-border); padding:16px 0; }
@@ -289,19 +328,75 @@ button{ font-family:inherit; cursor:pointer; }
 
 /* process */
 .process-wrap{ position:relative; }
-.process-line{ position:absolute; top:34px; left:0; right:0; height:2px; background:var(--c-border); z-index:0; }
-.process-line-fill{ position:absolute; top:0; left:0; height:100%; width:0; background:var(--grad-accent); transition:width 1.4s ease; }
-.process-steps{ position:relative; z-index:1; display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
-.p-step{ text-align:center; }
+.process-line{ display:none; }
+.process-line-fill{ display:none; }
+.process-steps{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:22px;
+  counter-reset:process-step;
+}
+.p-step{
+  position:relative;
+  min-height:220px;
+  text-align:left;
+  padding:30px 24px 26px;
+  border-radius:18px;
+  background:#fff;
+  border:1px solid var(--c-border);
+  box-shadow:var(--shadow-sm);
+  overflow:hidden;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.p-step::after{
+  content:'';
+  position:absolute;
+  inset:auto -40px -70px auto;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background:rgba(0,166,166,.08);
+}
+.p-step:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow-lg);
+  border-color:rgba(0,102,204,.22);
+}
 .p-step .p-num{
-  width:68px; height:68px; border-radius:50%; background:#fff; border:2px solid var(--c-border);
-  display:flex; align-items:center; justify-content:center; margin:0 auto 18px;
-  font-family:var(--font-display); font-weight:700; color:var(--c-primary); font-size:18px;
+  width:56px;
+  height:56px;
+  border-radius:16px;
+  background:var(--grad-accent);
+  border:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 0 20px;
+  font-family:var(--font-display);
+  font-weight:800;
+  color:#fff;
+  font-size:18px;
+  box-shadow:0 12px 28px rgba(0,166,166,.22);
   transition:all .3s ease;
 }
 .p-step.active .p-num{ background:var(--grad-accent); color:#fff; border-color:transparent; }
-.p-step h4{ font-size:15px; color:var(--c-primary); margin-bottom:8px; font-family:var(--font-display); }
-.p-step p{ font-size:13.5px; }
+.p-step h4{
+  position:relative;
+  z-index:1;
+  font-size:17px;
+  color:var(--c-primary);
+  margin-bottom:10px;
+  font-family:var(--font-display);
+}
+.p-step p{
+  position:relative;
+  z-index:1;
+  font-size:14px;
+  line-height:1.65;
+  margin:0;
+}
 
 /* testimonials */
 .t-card{ background:var(--c-surface); border-radius:var(--radius-md); padding:34px; border:1px solid var(--c-border); box-shadow:var(--shadow-sm); }
@@ -521,8 +616,11 @@ footer h4{ color:#fff; font-size:15px; margin-bottom:22px; }
 .ci-2{ top:146px; left:0; width:44%; height:188px; z-index:3; }
 .ci-3{ top:18px; right:0; width:34%; height:322px; z-index:1; }
 .ci-4{ left:35%; bottom:0; width:44%; height:156px; z-index:4; }
-.hero.hero-sm{ padding:145px 0 72px; }
-.hero.hero-sm h1{ font-size:clamp(30px,4vw,46px); }
+.hero.hero-sm{
+  min-height:430px;
+  padding:150px 0 78px;
+}
+.hero.hero-sm h1{ font-size:clamp(36px,4.8vw,62px); }
 
 .pa-section{
   position:relative;
@@ -641,16 +739,27 @@ footer h4{ color:#fff; font-size:15px; margin-bottom:22px; }
   .hero-grid{ grid-template-columns:1fr; }
   .hero-visual{ height:360px; max-width:760px; width:100%; margin:10px auto 0; }
   .pa-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .process-steps{ grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
 @media (max-width:768px){
   .hero{ padding:132px 0 70px; }
   .hero h1{ font-size:clamp(30px,10vw,42px); }
   .hero p.lead{ font-size:15px; }
+  .hero-sm{
+    min-height:390px;
+  }
+  .hero-sm::after{
+    background:
+      linear-gradient(90deg, rgba(10,19,48,.98) 0%, rgba(10,19,48,.9) 68%, rgba(10,19,48,.78) 100%),
+      url('../images/service-hero-finance.png') center center / cover no-repeat;
+  }
   .hero-visual{ display:none; }
   .pa-section{ padding:72px 0; }
   .pa-grid{ grid-template-columns:1fr; gap:22px; }
   .pa-head{ padding:28px 24px 48px; }
   .pa-body{ padding:22px 24px 26px; }
+  .process-steps{ grid-template-columns:1fr; }
+  .p-step{ min-height:auto; }
 }
 
 @media (prefers-reduced-motion: reduce){
