@@ -260,7 +260,16 @@ add_action( 'customize_register', 'payroll_customize_register' );
 
 /**
  * Small helper: fetch a theme mod with a safe default, always escaped by caller.
+ *
+ * WordPress returns saved empty strings as real Customizer values. That can
+ * hide required homepage copy, buttons, and hero images, so blanks fall back.
  */
 function payroll_mod( $key, $default = '' ) {
-	return get_theme_mod( $key, $default );
+	$value = get_theme_mod( $key, $default );
+
+	if ( is_string( $value ) && '' === trim( $value ) && '' !== $default ) {
+		return $default;
+	}
+
+	return $value;
 }

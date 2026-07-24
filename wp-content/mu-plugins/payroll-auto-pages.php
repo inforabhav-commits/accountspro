@@ -2478,7 +2478,7 @@ PGCONTENT;
 </section>
 
 PGCONTENT;
-	$content_refund_policy = <<<'PGCONTENT'
+$content_refund_policy = <<<'PGCONTENT'
 
 <section class="hero hero-sm">
   <div class="container reveal in">
@@ -2548,6 +2548,328 @@ PGCONTENT;
 
 PGCONTENT;
 
+	$content_cloud_hosting_services = <<<'PGCONTENT'
+
+<section class="hero hero-sm">
+  <div class="container reveal in">
+    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-cloud"></i> Cloud Hosting Services</span>
+    <h1>Secure cloud hosting for accounting, payroll, and business apps</h1>
+    <p>Run your essential finance systems from a reliable cloud environment with managed support, backups, and protected access.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="reveal in">
+      <span class="eyebrow"><i class="fa-solid fa-server"></i> Managed Cloud</span>
+      <h2>Keep your team connected without losing control of your data</h2>
+      <p>We help businesses host accounting applications, payroll tools, files, and virtual desktops in a secure cloud setup designed for everyday work. Your staff can access the tools they need while permissions, backups, and infrastructure are handled carefully.</p>
+      <ul class="check-list">
+        <li><i class="fa-solid fa-check"></i> Cloud server hosting for finance and operations software</li>
+        <li><i class="fa-solid fa-check"></i> Virtual desktop hosting for remote and hybrid teams</li>
+        <li><i class="fa-solid fa-check"></i> Secure backup and disaster recovery planning</li>
+        <li><i class="fa-solid fa-check"></i> User access, permissions, and ongoing support</li>
+      </ul>
+    </div>
+    <div class="form-box reveal in">
+      <h3>What we manage</h3>
+      <p>Server setup, migration planning, user access, app hosting, backup routines, monitoring, and support coordination.</p>
+      <a href="/contact/" class="btn btn-primary">Discuss Cloud Hosting <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal in">
+      <span class="eyebrow"><i class="fa-solid fa-shield-halved"></i> Cloud Support</span>
+      <h2>Built for secure daily work</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal in"><div class="card-icon"><i class="fa-solid fa-lock"></i></div><h3>Protected Access</h3><p>Role-based access and secure login practices help keep sensitive accounting and payroll data controlled.</p></div>
+      <div class="card reveal in"><div class="card-icon"><i class="fa-solid fa-rotate"></i></div><h3>Reliable Backups</h3><p>Backup routines and recovery planning reduce downtime and data-loss risk for critical workflows.</p></div>
+      <div class="card reveal in"><div class="card-icon"><i class="fa-solid fa-headset"></i></div><h3>Ongoing Support</h3><p>Get help with hosting issues, user changes, application access, and cloud environment coordination.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-banner reveal in">
+      <h2>Need a secure cloud setup?</h2>
+      <p>Tell us what software and users you need to support, and we'll map the right hosting approach.</p>
+      <div class="hero-actions">
+        <a href="/contact/" class="btn btn-primary" style="background:#fff;color:var(--c-primary);">Get a Free Quote</a>
+        <a href="/contact/" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+PGCONTENT;
+
+	$content_quickbooks_services = <<<'PGCONTENT'
+
+<section class="hero hero-sm">
+  <div class="container reveal in">
+    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-q"></i> QuickBooks Services</span>
+    <h1>QuickBooks setup, cleanup, bookkeeping, and payroll support</h1>
+    <p>Get your QuickBooks file organized, accurate, and useful for decisions, from setup and migration to monthly reporting.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="reveal in">
+      <span class="eyebrow"><i class="fa-solid fa-book"></i> QuickBooks Help</span>
+      <h2>Make QuickBooks work cleanly for your business</h2>
+      <p>We support QuickBooks Online, Desktop, Enterprise, and Payroll workflows. Whether your file needs a fresh setup, catch-up bookkeeping, bank reconciliation, or cleanup, we help bring the numbers back into order.</p>
+      <ul class="check-list">
+        <li><i class="fa-solid fa-check"></i> QuickBooks setup and chart of accounts configuration</li>
+        <li><i class="fa-solid fa-check"></i> Bank feeds, categorization, and reconciliation</li>
+        <li><i class="fa-solid fa-check"></i> Catch-up and cleanup bookkeeping</li>
+        <li><i class="fa-solid fa-check"></i> Payroll, invoicing, reporting, and monthly close support</li>
+      </ul>
+    </div>
+    <div class="form-box reveal in">
+      <h3>QuickBooks file review</h3>
+      <p>We can review your current setup, identify issues, and recommend a clear cleanup or monthly support plan.</p>
+      <a href="/contact/" class="btn btn-primary">Request QuickBooks Support <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal in">
+      <span class="eyebrow"><i class="fa-solid fa-list-check"></i> Services</span>
+      <h2>QuickBooks support from setup to reporting</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal in"><div class="card-icon"><i class="fa-solid fa-sliders"></i></div><h3>Setup &amp; Migration</h3><p>Start with the right structure, opening balances, accounts, products, customers, vendors, and payroll settings.</p></div>
+      <div class="card reveal in"><div class="card-icon"><i class="fa-solid fa-broom"></i></div><h3>Cleanup &amp; Catch-Up</h3><p>Fix uncategorized transactions, old reconciliations, duplicate entries, and inconsistent account mapping.</p></div>
+      <div class="card reveal in"><div class="card-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Monthly Reporting</h3><p>Get reconciled books, financial statements, and useful management reports on a predictable schedule.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-banner reveal in">
+      <h2>Need QuickBooks cleaned up?</h2>
+      <p>Send us the current state of your books and we'll help you choose the right next step.</p>
+      <div class="hero-actions">
+        <a href="/contact/" class="btn btn-primary" style="background:#fff;color:var(--c-primary);">Get a Free Quote</a>
+        <a href="/contact/" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+PGCONTENT;
+
+$content_xero_services = <<<'PGCONTENT'
+
+<section class="hero hero-sm">
+  <div class="container reveal in">
+    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-x"></i> Xero Services</span>
+    <h1>Xero bookkeeping, setup, migration, and reporting support</h1>
+    <p>Keep your Xero account clean, reconciled, and connected to the tools your business depends on.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="reveal in">
+      <span class="eyebrow"><i class="fa-solid fa-cloud-arrow-up"></i> Xero Support</span>
+      <h2>Simple cloud accounting with disciplined bookkeeping behind it</h2>
+      <p>Xero is strongest when setup, bank rules, reconciliations, contacts, invoices, and reports are handled consistently. We help businesses migrate, clean up, and maintain Xero so the dashboard reflects reality.</p>
+      <ul class="check-list">
+        <li><i class="fa-solid fa-check"></i> Xero setup, migration, and conversion support</li>
+        <li><i class="fa-solid fa-check"></i> Bank feeds, rules, reconciliations, and coding</li>
+        <li><i class="fa-solid fa-check"></i> Invoicing, bills, contacts, and tracking categories</li>
+        <li><i class="fa-solid fa-check"></i> Monthly reports and app integration support</li>
+      </ul>
+    </div>
+    <div class="form-box reveal in">
+      <h3>Xero health check</h3>
+      <p>We review your setup, reconciliation status, and reporting structure, then outline what needs to be fixed or maintained.</p>
+      <a href="/contact/" class="btn btn-primary">Request Xero Support <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal in">
+      <span class="eyebrow"><i class="fa-solid fa-diagram-project"></i> Xero Workflow</span>
+      <h2>Clean records, connected systems, clearer decisions</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal in"><div class="card-icon"><i class="fa-solid fa-right-left"></i></div><h3>Migration</h3><p>Move from spreadsheets or another accounting platform into Xero with cleaner opening balances and structure.</p></div>
+      <div class="card reveal in"><div class="card-icon"><i class="fa-solid fa-building-columns"></i></div><h3>Reconciliation</h3><p>Keep bank feeds, payments, bills, invoices, and transfers matched correctly each month.</p></div>
+      <div class="card reveal in"><div class="card-icon"><i class="fa-solid fa-plug"></i></div><h3>Integrations</h3><p>Connect Xero with payroll, ecommerce, payment, reporting, and document workflows where appropriate.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-banner reveal in">
+      <h2>Want Xero running properly?</h2>
+      <p>We'll help clean up the file, improve the workflow, and keep monthly reports reliable.</p>
+      <div class="hero-actions">
+        <a href="/contact/" class="btn btn-primary" style="background:#fff;color:var(--c-primary);">Get a Free Quote</a>
+        <a href="/contact/" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+PGCONTENT;
+
+	$content_sage = <<<'PGCONTENT'
+
+<section class="hero hero-sm">
+  <div class="container reveal in">
+    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-leaf"></i> Sage Services</span>
+    <h1>Assist Pro Sage Services</h1>
+    <p>Expert Sage solutions for small businesses, growing companies, and enterprises.</p>
+    <div class="hero-actions">
+      <a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="/contact/" class="btn btn-outline">Live Help</a>
+    </div>
+  </div>
+</section>
+
+<section class="logo-strip">
+  <div class="container">
+    <p style="font-size:16px;text-align:center;font-weight:300;color:#111;">Whether you're implementing Sage for the first time, migrating accounting data, resolving technical issues, or optimizing daily operations, AccountingAssistPro delivers professional Sage support tailored to your business.</p>
+  </div>
+</section>
+
+<section class="pa-section">
+  <div class="container">
+    <div class="section-head reveal in">
+      <span class="eyebrow"><i class="fa-solid fa-layer-group"></i> What We Offer</span>
+      <h2>Our Sage Services</h2>
+      <p>Strategic Sage solutions built for accuracy, security, and business continuity.</p>
+    </div>
+    <div class="pa-grid">
+      <div class="pa-card reveal in"><div class="pa-head pa-bookkeeping"><div class="pa-icon"><i class="fa-solid fa-download"></i></div><h3>Sage Installation &amp; Setup</h3></div><div class="pa-body"><ul><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> New Installation</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Software Configuration</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Company Setup</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> User Management</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> License Activation</li></ul></div></div>
+      <div class="pa-card reveal in"><div class="pa-head pa-accounting"><div class="pa-icon"><i class="fa-solid fa-right-left"></i></div><h3>Sage Migration Services</h3></div><div class="pa-body"><ul><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Data Migration</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Company File Conversion</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Cloud Migration</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Data Validation</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Post-Migration Testing</li></ul></div></div>
+      <div class="pa-card reveal in"><div class="pa-head pa-payroll"><div class="pa-icon"><i class="fa-solid fa-money-check-dollar"></i></div><h3>Sage Payroll Services</h3></div><div class="pa-body"><ul><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Payroll Setup</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Employee Configuration</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Tax Settings</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Direct Deposit Assistance</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Payroll Troubleshooting</li></ul></div></div>
+      <div class="pa-card reveal in"><div class="pa-head pa-cloud"><div class="pa-icon"><i class="fa-solid fa-cloud"></i></div><h3>Sage Cloud Hosting</h3></div><div class="pa-body"><ul><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Secure Cloud Servers</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Remote Access</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Automatic Backups</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Multi-User Access</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Disaster Recovery</li></ul></div></div>
+      <div class="pa-card reveal in"><div class="pa-head pa-tax"><div class="pa-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Error Troubleshooting</h3></div><div class="pa-body"><ul><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Installation Errors</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Update Failures</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Login Problems</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Database Errors</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Multi-User Issues</li></ul></div></div>
+      <div class="pa-card reveal in"><div class="pa-head pa-accounting"><div class="pa-icon"><i class="fa-solid fa-database"></i></div><h3>Sage Data Recovery &amp; Backup</h3></div><div class="pa-body"><ul><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Backup Configuration</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Data Recovery</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> File Restoration</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Database Repair</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Data Integrity Checks</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-boxes-stacked"></i> Sage Products</span><h2>Sage Products We Support</h2></div>
+    <div class="grid grid-3">
+      <div class="card reveal in"><h3>Sage 50 Accounting</h3><p>Desktop accounting software for small and medium-sized businesses.</p></div>
+      <div class="card reveal in"><h3>Sage 100</h3><p>Business management and financial software for growing organizations.</p></div>
+      <div class="card reveal in"><h3>Sage 300</h3><p>ERP support for businesses with complex financial operations.</p></div>
+      <div class="card reveal in"><h3>Sage Intacct</h3><p>Cloud-native financial management with automation and reporting.</p></div>
+      <div class="card reveal in"><h3>Sage Business Cloud Accounting</h3><p>Online accounting support for flexible, collaborative teams.</p></div>
+      <div class="card reveal in"><h3>Sage HR</h3><p>Human resources and employee management support.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-industry"></i> Industries</span><h2>Industries We Serve</h2></div><div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;" class="reveal in"><span class="tag-pill">Small Businesses</span><span class="tag-pill">Startups</span><span class="tag-pill">Healthcare</span><span class="tag-pill">Real Estate</span><span class="tag-pill">Construction</span><span class="tag-pill">Retail</span><span class="tag-pill">E-commerce</span><span class="tag-pill">Manufacturing</span><span class="tag-pill">Professional Services</span><span class="tag-pill">Nonprofits</span></div></div></section>
+
+<section class="section"><div class="container split"><div class="reveal in"><span class="eyebrow"><i class="fa-solid fa-circle-check"></i> Why Choose Us</span><h2>Why businesses choose us</h2><p>Businesses trust us for dependable Sage support focused on performance, security, and continuity.</p></div><div class="reveal in"><ul class="check-list"><li><i class="fa-solid fa-check"></i> Experienced Sage professionals</li><li><i class="fa-solid fa-check"></i> Personalized business solutions</li><li><i class="fa-solid fa-check"></i> Secure remote support</li><li><i class="fa-solid fa-check"></i> Cloud hosting expertise</li><li><i class="fa-solid fa-check"></i> Fast response times</li><li><i class="fa-solid fa-check"></i> Data protection best practices</li></ul></div></div></section>
+
+<section class="section section-alt"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-route"></i> Process</span><h2>Our 4-Step Support Process</h2></div><div class="process-wrap reveal in"><div class="process-steps"><div class="p-step active"><div class="p-num">1</div><h4>Consultation</h4><p>Share your Sage issue or business requirements.</p></div><div class="p-step active"><div class="p-num">2</div><h4>Assessment</h4><p>We review software, configuration, and data.</p></div><div class="p-step active"><div class="p-num">3</div><h4>Implement Solution</h4><p>We resolve, configure, migrate, or optimize your Sage environment.</p></div><div class="p-step active"><div class="p-num">4</div><h4>Ongoing Support</h4><p>Receive maintenance, updates, and technical assistance.</p></div></div></div></div></section>
+
+<section class="section"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-quote-left"></i> What Our Clients Say</span><h2>Trusted by Businesses. Valued by Clients.</h2></div><div class="grid grid-3"><div class="t-card reveal in"><p class="t-quote">AccountingAssistPro made our Sage migration effortless. The transition was smooth, and our team was up and running without disruption.</p><div class="t-person"><div class="t-avatar">BD</div><div><b>Brielle Donovan</b><span>Financial Controller</span></div></div></div><div class="t-card reveal in"><p class="t-quote">Their Sage payroll support has been exceptional. They resolved our configuration issues quickly and helped streamline payroll.</p><div class="t-person"><div class="t-avatar">GE</div><div><b>Grant Ellison</b><span>Operations Manager</span></div></div></div><div class="t-card reveal in"><p class="t-quote">From cloud hosting to technical support, AccountingAssistPro has become a trusted technology partner for our business.</p><div class="t-person"><div class="t-avatar">MK</div><div><b>Marissa Kensington</b><span>Business Owner</span></div></div></div></div></div></section>
+
+<section class="section"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-circle-question"></i> FAQ</span><h2>Frequently Asked Questions</h2></div><div style="max-width:760px;margin:0 auto;" class="reveal in"><div class="faq-item open"><div class="faq-q">Which Sage products do you support? <i class="fa-solid fa-plus"></i></div><div class="faq-a" style="max-height:120px;"><div class="faq-a-inner">We assist with Sage 50, Sage 100, Sage 300, Sage Intacct, Sage Business Cloud Accounting, and Sage HR.</div></div></div><div class="faq-item"><div class="faq-q">Can you help migrate data to a newer version of Sage? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><div class="faq-a-inner">Yes. We provide secure migration services, data validation, and post-migration testing.</div></div></div><div class="faq-item"><div class="faq-q">Do you offer cloud hosting for Sage? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><div class="faq-a-inner">Yes. Our cloud hosting solutions provide secure remote access, automatic backups, and scalable infrastructure.</div></div></div><div class="faq-item"><div class="faq-q">Can you help with Sage payroll? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><div class="faq-a-inner">Yes. We assist with payroll setup, tax configuration, updates, troubleshooting, and payroll issues.</div></div></div></div></div></section>
+
+<section class="section-tight"><div class="container"><div class="cta-banner reveal in"><h2>Ready to simplify your payroll?</h2><p>Speak with a Sage expert and get the right support for your business.</p><div class="hero-actions"><a href="/contact/" class="btn btn-primary" style="background:#fff;color:var(--c-primary);">Get a Free Quote</a><a href="/contact/" class="btn btn-outline">Live Help</a></div></div></div></section>
+
+PGCONTENT;
+
+	$content_zoho_books = <<<'PGCONTENT'
+
+<section class="hero hero-sm">
+  <div class="container reveal in">
+    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-book-open"></i> Zoho Books Assistance</span>
+    <h1>Zoho Books Assistance for Your Business</h1>
+    <p>End-to-end Zoho Books support for accurate and efficient financial management.</p>
+    <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Contact Us <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+  </div>
+</section>
+
+<section class="logo-strip"><div class="container"><p style="font-size:16px;text-align:center;font-weight:300;color:#111;">Simplify your accounting with reliable Zoho Books Assistance. Whether you're setting up Zoho Books, migrating data, fixing errors, or managing invoices and taxes, our professionals help keep your finances running smoothly.</p></div></section>
+
+<section class="pa-section"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-layer-group"></i> What We Offer</span><h2>Our Zoho Books Services</h2><p>From setup to daily bookkeeping, we've got your Zoho Books covered.</p></div><div class="pa-grid">
+  <div class="pa-card reveal in"><div class="pa-head pa-bookkeeping"><div class="pa-icon"><i class="fa-solid fa-gear"></i></div><h3>Zoho Books Setup</h3></div><div class="pa-body"><p>We configure chart of accounts, taxes, users, invoices, and preferences correctly from the beginning.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-accounting"><div class="pa-icon"><i class="fa-solid fa-right-left"></i></div><h3>Data Migration</h3></div><div class="pa-body"><p>Migrate data from QuickBooks, Xero, Excel, Sage, FreshBooks, or other software with accuracy.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-payroll"><div class="pa-icon"><i class="fa-solid fa-receipt"></i></div><h3>Bookkeeping Assistance</h3></div><div class="pa-body"><p>Manage invoices, bills, expenses, vendor payments, customer transactions, and reconciliations.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-tax"><div class="pa-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div><h3>Tax Configuration</h3></div><div class="pa-body"><p>Configure GST, VAT, Sales Tax, and other tax settings for accurate calculations and compliance.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-cloud"><div class="pa-icon"><i class="fa-solid fa-credit-card"></i></div><h3>Invoice &amp; Payment Management</h3></div><div class="pa-body"><p>Create invoices, recurring invoices, reminders, payment integrations, and customer statements.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-accounting"><div class="pa-icon"><i class="fa-solid fa-building-columns"></i></div><h3>Bank Reconciliation</h3></div><div class="pa-body"><p>Connect bank accounts, import transactions, and reconcile records for accurate books.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-bookkeeping"><div class="pa-icon"><i class="fa-solid fa-boxes-stacked"></i></div><h3>Inventory Management</h3></div><div class="pa-body"><p>Track products, stock levels, purchase orders, sales orders, and inventory valuation.</p></div></div>
+</div></div></section>
+
+<section class="section section-alt"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-industry"></i> Industries</span><h2>Industries We Serve</h2></div><div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;" class="reveal in"><span class="tag-pill">Small Businesses</span><span class="tag-pill">Startups</span><span class="tag-pill">Healthcare</span><span class="tag-pill">Real Estate</span><span class="tag-pill">Construction</span><span class="tag-pill">Retail</span><span class="tag-pill">E-commerce</span><span class="tag-pill">Manufacturing</span><span class="tag-pill">Professional Services</span><span class="tag-pill">Nonprofits</span></div></div></section>
+
+<section class="section"><div class="container split"><div class="reveal in"><span class="eyebrow"><i class="fa-solid fa-circle-check"></i> Why Choose Us</span><h2>Why choose our Zoho Books assistance?</h2><p>Our Zoho Books specialists provide end-to-end help to streamline bookkeeping, automate financial processes, and maintain accurate records.</p></div><div class="reveal in"><ul class="check-list"><li><i class="fa-solid fa-check"></i> Experienced Zoho Books professionals</li><li><i class="fa-solid fa-check"></i> Personalized business solutions</li><li><i class="fa-solid fa-check"></i> Secure data handling</li><li><i class="fa-solid fa-check"></i> Fast response times</li><li><i class="fa-solid fa-check"></i> Accurate financial management</li><li><i class="fa-solid fa-check"></i> Ongoing support and maintenance</li></ul></div></div></section>
+
+<section class="section section-alt"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-route"></i> Process</span><h2>Our Simple 4-Step Process</h2><p>A simple, transparent process to keep your books accurate and current.</p></div><div class="process-wrap reveal in"><div class="process-steps"><div class="p-step active"><div class="p-num">1</div><h4>Consultation &amp; Assessment</h4><p>We review your business requirements and current setup.</p></div><div class="p-step active"><div class="p-num">2</div><h4>Implementation</h4><p>We configure Zoho Books, migrate data, and integrate required apps.</p></div><div class="p-step active"><div class="p-num">3</div><h4>Testing &amp; Optimization</h4><p>We verify data accuracy and optimize workflows.</p></div><div class="p-step active"><div class="p-num">4</div><h4>Assistance</h4><p>We provide continuous troubleshooting, updates, and guidance.</p></div></div></div></div></section>
+
+<section class="section"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-quote-left"></i> What Our Clients Say</span><h2>Trusted by Businesses. Valued by Clients.</h2></div><div class="grid grid-3"><div class="t-card reveal in"><p class="t-quote">Accounting Assist Pro configured our Zoho Books account exactly as our business required and made setup simple.</p><div class="t-person"><div class="t-avatar">NH</div><div><b>Nathan Holloway</b><span>Director</span></div></div></div><div class="t-card reveal in"><p class="t-quote">From data migration to bank reconciliation, the team handled every aspect professionally.</p><div class="t-person"><div class="t-avatar">AR</div><div><b>Amelia Rostova</b><span>Accounting Manager</span></div></div></div><div class="t-card reveal in"><p class="t-quote">Their quick response, technical knowledge, and attention to detail made managing our finances much easier.</p><div class="t-person"><div class="t-avatar">DA</div><div><b>David Anderson</b><span>CEO</span></div></div></div></div></div></section>
+
+<section class="section"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-circle-question"></i> FAQ</span><h2>Frequently Asked Questions</h2></div><div style="max-width:760px;margin:0 auto;" class="reveal in"><div class="faq-item open"><div class="faq-q">Can you help set up Zoho Books from scratch? <i class="fa-solid fa-plus"></i></div><div class="faq-a" style="max-height:120px;"><div class="faq-a-inner">Yes. We configure your account, chart of accounts, taxes, users, invoices, and workflows based on your business needs.</div></div></div><div class="faq-item"><div class="faq-q">Can you migrate data from QuickBooks or Xero? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><div class="faq-a-inner">Absolutely. We securely migrate customers, vendors, invoices, transactions, inventory, and financial records.</div></div></div><div class="faq-item"><div class="faq-q">Do you provide ongoing Zoho Books support? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><div class="faq-a-inner">Yes. We provide troubleshooting, maintenance, feature optimization, and user guidance.</div></div></div><div class="faq-item"><div class="faq-q">Can you integrate Zoho Books with other applications? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><div class="faq-a-inner">Yes. We help integrate Zoho Books with CRM, inventory, payment gateways, ecommerce platforms, and other business apps.</div></div></div></div></div></section>
+
+<section class="section-tight"><div class="container"><div class="cta-banner reveal in"><h2>Ready to optimize your accounting?</h2><p>Speak with an expert and simplify your Zoho Books workflow.</p><div class="hero-actions"><a href="/contact/" class="btn btn-primary" style="background:#fff;color:var(--c-primary);">Contact Us</a><a href="/contact/" class="btn btn-outline">Live Help</a></div></div></div></section>
+
+PGCONTENT;
+
+	$content_netsuite = <<<'PGCONTENT'
+
+<section class="hero hero-sm">
+  <div class="container reveal in">
+    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-cubes"></i> NetSuite Services</span>
+    <h1>Unlock the Full Potential of NetSuite</h1>
+    <p>We help you optimize NetSuite for better performance, accuracy, and growth.</p>
+    <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Contact Us <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+  </div>
+</section>
+
+<section class="logo-strip"><div class="container"><p style="font-size:16px;text-align:center;font-weight:300;color:#111;">At Accounting Assist Pro, we provide professional NetSuite consulting and support to help businesses implement, customize, optimize, and maintain their NetSuite environment.</p></div></section>
+
+<section class="pa-section"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-layer-group"></i> What We Offer</span><h2>Our NetSuite Services</h2><p>Implementation, accounting support, reporting, migration, and ongoing assistance for NetSuite users.</p></div><div class="pa-grid">
+  <div class="pa-card reveal in"><div class="pa-head pa-bookkeeping"><div class="pa-icon"><i class="fa-solid fa-calculator"></i></div><h3>Accounting Services</h3></div><div class="pa-body"><p>Maintain accurate records, manage transactions, and streamline daily accounting.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-accounting"><div class="pa-icon"><i class="fa-solid fa-book"></i></div><h3>Bookkeeping Services</h3></div><div class="pa-body"><p>Keep books organized with timely recording, reconciliation, and maintenance.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-payroll"><div class="pa-icon"><i class="fa-solid fa-file-invoice"></i></div><h3>Accounts Payable</h3></div><div class="pa-body"><p>Manage vendor bills, approvals, payment scheduling, and expense tracking.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-tax"><div class="pa-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div><h3>Accounts Receivable</h3></div><div class="pa-body"><p>Improve collections, customer billing, payment tracking, and receivable visibility.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-cloud"><div class="pa-icon"><i class="fa-solid fa-building-columns"></i></div><h3>Bank &amp; Credit Card Reconciliation</h3></div><div class="pa-body"><p>Reconcile bank and card transactions to keep financial records current.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-accounting"><div class="pa-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Financial Reporting &amp; Analysis</h3></div><div class="pa-body"><p>Build reports, dashboards, and KPIs for better decisions.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-tax"><div class="pa-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div><h3>Tax Assistance</h3></div><div class="pa-body"><p>Support tax configuration, transaction tracking, and tax-ready records.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-payroll"><div class="pa-icon"><i class="fa-solid fa-money-check-dollar"></i></div><h3>Payroll Services</h3></div><div class="pa-body"><p>Record payroll transactions and reconcile payroll-related accounts.</p></div></div>
+  <div class="pa-card reveal in"><div class="pa-head pa-bookkeeping"><div class="pa-icon"><i class="fa-solid fa-right-left"></i></div><h3>Financial Data Migration</h3></div><div class="pa-body"><p>Securely migrate accounting data from QuickBooks, Xero, Sage, or other systems.</p></div></div>
+</div></div></section>
+
+<section class="section section-alt"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-industry"></i> Industries</span><h2>Industries We Serve</h2></div><div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;" class="reveal in"><span class="tag-pill">Small Businesses</span><span class="tag-pill">Startups</span><span class="tag-pill">Healthcare</span><span class="tag-pill">Real Estate</span><span class="tag-pill">Construction</span><span class="tag-pill">Retail</span><span class="tag-pill">E-commerce</span><span class="tag-pill">Manufacturing</span><span class="tag-pill">Professional Services</span><span class="tag-pill">Nonprofits</span></div></div></section>
+
+<section class="section"><div class="container split"><div class="reveal in"><span class="eyebrow"><i class="fa-solid fa-circle-check"></i> Why Choose Us</span><h2>Why businesses choose Accounting Assist Pro</h2><p>Our consultants help configure NetSuite to match workflows, improve productivity, and maximize your ERP investment.</p></div><div class="reveal in"><ul class="check-list"><li><i class="fa-solid fa-check"></i> Experienced NetSuite professionals</li><li><i class="fa-solid fa-check"></i> Personalized business solutions</li><li><i class="fa-solid fa-check"></i> Secure data migration</li><li><i class="fa-solid fa-check"></i> Fast response times</li><li><i class="fa-solid fa-check"></i> Accurate financial management</li><li><i class="fa-solid fa-check"></i> Ongoing support and maintenance</li></ul></div></div></section>
+
+<section class="section section-alt"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-route"></i> Process</span><h2>Fast, Transparent, and Hassle-Free Process</h2></div><div class="process-wrap reveal in"><div class="process-steps"><div class="p-step active"><div class="p-num">1</div><h4>Consultation</h4><p>We understand business goals, systems, and requirements.</p></div><div class="p-step active"><div class="p-num">2</div><h4>Planning &amp; Implementation</h4><p>We configure, customize, migrate, and integrate NetSuite.</p></div><div class="p-step active"><div class="p-num">3</div><h4>Testing &amp; Optimization</h4><p>We validate workflows, reports, and integrations before deployment.</p></div><div class="p-step active"><div class="p-num">4</div><h4>Assistance</h4><p>Receive continued support, training, troubleshooting, and optimization.</p></div></div></div></div></section>
+
+<section class="section"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-quote-left"></i> What Our Clients Say</span><h2>Trusted by Businesses. Valued by Clients.</h2></div><div class="grid grid-3"><div class="t-card reveal in"><p class="t-quote">We rely on Accounting Assist Pro for day-to-day NetSuite bookkeeping and reconciliation. Their support saves valuable time.</p><div class="t-person"><div class="t-avatar">LW</div><div><b>Lucas Whitmore</b><span>Chief Financial Officer</span></div></div></div><div class="t-card reveal in"><p class="t-quote">Accounting Assist Pro made our NetSuite transition effortless, handling setup, migration, and reporting with accuracy.</p><div class="t-person"><div class="t-avatar">JW</div><div><b>Jennifer Wilson</b><span>Operations Controller</span></div></div></div><div class="t-card reveal in"><p class="t-quote">From workflow automation to custom reports, their NetSuite expertise streamlined our operations.</p><div class="t-person"><div class="t-avatar">EC</div><div><b>Ethan Caldwell</b><span>Director</span></div></div></div></div></div></section>
+
+<section class="section"><div class="container"><div class="section-head reveal in"><span class="eyebrow"><i class="fa-solid fa-circle-question"></i> FAQ</span><h2>Frequently Asked Questions</h2></div><div style="max-width:760px;margin:0 auto;" class="reveal in"><div class="faq-item open"><div class="faq-q">Do you sell NetSuite software? <i class="fa-solid fa-plus"></i></div><div class="faq-a" style="max-height:120px;"><div class="faq-a-inner">No. We provide consulting, implementation, customization, integration, migration, and support services. We do not sell NetSuite licenses.</div></div></div><div class="faq-item"><div class="faq-q">Can you migrate data from QuickBooks or Xero? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><div class="faq-a-inner">Yes. We securely migrate accounting data, customers, vendors, inventory, transactions, and financial history.</div></div></div><div class="faq-item"><div class="faq-q">Do you offer ongoing NetSuite support? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><div class="faq-a-inner">Yes. We provide long-term support, troubleshooting, optimization, and user training.</div></div></div><div class="faq-item"><div class="faq-q">Can you customize NetSuite for my business? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><div class="faq-a-inner">Absolutely. We tailor dashboards, reports, workflows, forms, permissions, and automation to business requirements.</div></div></div></div></div></section>
+
+<section class="section-tight"><div class="container"><div class="cta-banner reveal in"><h2>Ready to optimize your accounting?</h2><p>Speak with a NetSuite expert and improve your financial operations.</p><div class="hero-actions"><a href="/contact/" class="btn btn-primary" style="background:#fff;color:var(--c-primary);">Contact Us</a><a href="/contact/" class="btn btn-outline">Live Help</a></div></div></div></section>
+
+PGCONTENT;
+
 	return array(
 		'about' => array( 'title' => 'About Us', 'content' => $content_about ),
 		'services' => array( 'title' => 'Services', 'content' => $content_services ),
@@ -2555,6 +2877,12 @@ PGCONTENT;
 		'accounting-services' => array( 'title' => 'Accounting Services', 'content' => $content_accounting_services ),
 		 'payroll-services' => array( 'title' => 'Payroll Services', 'content' => $content_payroll_services ),
          'tax-services' => array( 'title' => 'Tax Services', 'content' => $content_tax_services ),
+		'cloud-hosting-services' => array( 'title' => 'Cloud Hosting Services', 'content' => $content_cloud_hosting_services ),
+		'quickbooks-services' => array( 'title' => 'QuickBooks Services', 'content' => $content_quickbooks_services ),
+		'xero-services' => array( 'title' => 'Xero Services', 'content' => $content_xero_services ),
+		'sage' => array( 'title' => 'Sage Services', 'content' => $content_sage ),
+		'zoho-books-assistance' => array( 'title' => 'Zoho Books Assistance', 'content' => $content_zoho_books ),
+		'netsuite' => array( 'title' => 'NetSuite Services', 'content' => $content_netsuite ),
 		'resources' => array( 'title' => 'Resources', 'content' => $content_resources ),
 		'faq' => array( 'title' => 'FAQ', 'content' => $content_faq ),
 		'contact' => array( 'title' => 'Contact Us', 'content' => $content_contact ),
