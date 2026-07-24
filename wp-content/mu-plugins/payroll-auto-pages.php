@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PAYROLL_AUTO_PAGES_CONTENT_VERSION', '20260724-six-hero-collage-1' );
+define( 'PAYROLL_AUTO_PAGES_CONTENT_VERSION', '20260724-clean-accounting-hero-1' );
 
 add_action( 'init', 'payroll_auto_create_pages', 20 );
 
@@ -52,7 +52,7 @@ function payroll_auto_create_pages() {
 
 	// Only run for logged-in admins to avoid any front-end performance impact,
 	// and only once — it checks for existing slugs every time but that's cheap.
-	if ( ! is_admin() && ! ( defined( 'DOING_CRON' ) && DOING_CRON ) ) {
+	if ( ! is_admin() && ! current_user_can( 'manage_options' ) && ! ( defined( 'DOING_CRON' ) && DOING_CRON ) ) {
 		return;
 	}
 
@@ -202,18 +202,6 @@ PGCONTENT;
   </div>
 </div>
 
-<!--<section class="section">-->
-<!--  <div class="container">-->
-<!--    <div class="grid grid-3">-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-book"></i></div><h3>Bookkeeping Services</h3><p>Daily bookkeeping, catch-up bookkeeping, bank reconciliation, and general ledger management.</p></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-chart-pie"></i></div><h3>Accounting Services</h3><p>Financial statements, accounts payable and receivable, month-end and year-end closing.</p></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-money-check-dollar"></i></div><h3>Payroll Services</h3><p>Payroll processing, direct deposit, payroll tax filing, and employee payslips.</p></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div><h3>Tax Services</h3><p>Business tax preparation, individual tax returns, tax planning, and sales tax filing.</p></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-user-tie"></i></div><h3>CFO Services</h3><p>Virtual CFO guidance, budgeting and forecasting, cash flow management, financial strategy.</p></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-database"></i></div><h3>Additional Services</h3><p>Data entry, invoice and payment processing, vendor management, customer billing, and more.</p></div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
 
 <section class="section">
   <div class="container">
@@ -440,73 +428,21 @@ PGCONTENT;
 PGCONTENT;
 	$content_bookkeeping_services = <<<'PGCONTENT'
 
-<!--<section class="hero">-->
-<!--  <div class="hero-ring"></div>-->
-<!--  <div class="container hero-grid">-->
-<!--    <div class="reveal in">-->
-      <!--<span class="eyebrow"><i class="fa-solid fa-circle-check"></i> Trusted by 480+ growing businesses</span>-->
-<!--      <h1> Pro Assist</h1>-->
-<!--      <p class="lead">Meet Your New AI-Powered Financial Assistant </p>-->
-<!--      <div class="hero-actions">-->
-<!--        <a href="/contact/" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>-->
-<!--        <a href="/contact/" class="btn btn-outline">Contact Us</a>-->
-<!--      </div>-->
-      <!--<div class="hero-stats">-->
-      <!--  <div class="stat"><b><span class="counter" data-target="12" data-suffix="+">0</span> yrs</b><span>In Practice</span></div>-->
-      <!--  <div class="stat"><b><span class="counter" data-target="480" data-suffix="+">0</span></b><span>Businesses Served</span></div>-->
-      <!--  <div class="stat"><b><span class="counter" data-target="99.8" data-suffix="%">0</span></b><span>On-Time Payroll Rate</span></div>-->
-      <!--  <div class="stat"><b>$<span class="counter" data-target="180" data-suffix="M+">0</span></b><span>Payroll Processed / yr</span></div>-->
-      <!--</div>-->
-<!--    </div>-->
-<!--    <div class="hero-visual reveal in">-->
-<!--      <div class="paycard main">-->
-        <!--<div class="pc-top"><span>Direct Deposit</span><span class="pc-logo"></span></div>-->
-        <!--<div class="pc-amount">$4,215.60</div>-->
-        <!--<div class="pc-row"><span>Pay period</span><span>Jun 16 – Jun 30</span></div>-->
-        <!--<div class="pc-row"><span>Taxes withheld</span><span>$1,084.20</span></div>-->
-        <!--<div class="pc-badge"><i class="fa-solid fa-shield-halved"></i> Filed &amp; compliant</div>-->
-<!--      </div>-->
-      <!--<div class="floaty f1"><i class="fa-solid fa-chart-line" style="color:var(--c-accent);"></i> Cash flow +18%</div>-->
-      <!--<div class="floaty f2"><i class="fa-solid fa-clock" style="color:var(--c-secondary);"></i> Books closed on time</div>-->
-      <!--<div class="floaty f3"><i class="fa-solid fa-users" style="color:var(--c-primary);"></i> 42 employees paid</div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
-<section class="hero">
+<section class="hero hero-sm service-hero">
   <div class="hero-ring"></div>
-  <div class="container hero-grid">
-    <div class="reveal in">
+  <div class="container hero-grid reveal in">
+    <div class="hero-copy">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-book"></i> Bookkeeping Services</span>
       <h1>Bookkeeping Services That Keep Your Business Financially Organized</h1>
-      <p class="lead">We provide reliable day-to-day bookkeeping support – from daily transaction recording and catch-up work to bank reconciliation and general ledger management – so every figure in your system is accurate, current, and ready for reporting.</p>
+      <p>We provide reliable daily bookkeeping, catch-up work, bank reconciliation, and general ledger management so every figure stays accurate and ready for reporting.</p>
       <div class="hero-actions">
         <a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="/contact/" class="btn btn-outline">Live Help </a>
+        <a href="/contact/" class="btn btn-outline">Live Help</a>
       </div>
     </div>
-
-    <div class="hero-visual reveal in">
-      <div class="collage-item ci-1">
-        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=600&auto=format&fit=crop" alt="Product screen preview">
-      </div>
-      <div class="collage-item ci-2">
-        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop" alt="Business specialist on a call">
-      </div>
-      <div class="collage-item ci-3">
-        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop" alt="Client reviewing finances at home">
-      </div>
-      
-    </div>
-
-    <!-- floating search pill, overlapping both columns -->
-    <!--<div class="hero-search-float reveal in">-->
-    <!--  <span class="hero-search-icon"><i class="fa-solid fa-asterisk"></i></span>-->
-    <!--  <input type="text" placeholder="Type or ask something">-->
-    <!--  <button type="button" aria-label="Submit"><i class="fa-solid fa-arrow-right"></i></button>-->
-    <!--</div>-->
+    <div class="hero-visual service-hero-visual" aria-hidden="true"><div class="collage-item ci-1 service-shot service-shot-muted"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-2 service-shot service-shot-focus"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-3 service-shot service-shot-side"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div></div>
   </div>
 </section>
-
 
  <section class="logo-strip">
   <div class="container">
@@ -619,35 +555,7 @@ PGCONTENT;
   </div>
 </section>
 
-<!--<section class="section">-->
-<!--  <div class="container split">-->
-<!--    <div class="split-media reveal">-->
-<!--      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop" alt="Accounting team reviewing financial reports together">-->
-<!--      <div class="stat-chip">-->
-<!--        <div class="card-icon" style="margin-bottom:0;"><i class="fa-solid fa-award"></i></div>-->
-<!--        <div><div class="num">12+ yrs</div><div class="lbl">In practice</div></div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="reveal">-->
-      <!--<span class="eyebrow"><i class="fa-solid fa-building"></i> Who we are</span>-->
-<!--      <h2>Industry- We Serve </h2>-->
       
-<!--<ul class="check-list">-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Small Businesses</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Startups</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Healthcare</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Real Estate</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Construction</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Retail</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>E-commerce</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Manufacturing</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Professional Services</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Nonprofits</b></li>-->
-<!--</ul>-->
-<!--      <a href="/about/" class="btn btn-primary mt-40">Learn Our Story <i class="fa-solid fa-arrow-right"></i></a>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
 <section class="section section-alt">
   <div class="container">
     <div class="section-head reveal in">
@@ -721,40 +629,7 @@ PGCONTENT;
   </div>
 </section>
 
-<!--<section class="section section-alt">-->
-<!--  <div class="container">-->
-<!--    <div class="section-head reveal">-->
-<!--      <span class="eyebrow"><i class="fa-solid fa-layer-group"></i> What We Offer</span>-->
-<!--      <h2>Services built around your finance calendar</h2>-->
-<!--      <p>Every engagement starts with the essentials businesses actually need, month after month.</p>-->
-<!--    </div>-->
-<!--    <div class="grid grid-3">-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-money-check-dollar"></i></div><h3>Payroll Management</h3><p>Accurate, on-time pay runs with direct deposit, payslips, and full tax compliance.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div><h3>Tax Filing</h3><p>Business and payroll tax filings prepared and submitted correctly, every deadline.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>Employee Benefits</h3><p>Benefits deductions and contributions managed accurately inside every pay cycle.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>HR Compliance</h3><p>Stay ahead of federal, state, and local labor law changes without the research.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-book"></i></div><h3>Bookkeeping</h3><p>Daily transaction recording, bank reconciliation, and clean general ledgers.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-chart-pie"></i></div><h3>Financial Reporting</h3><p>Monthly statements and dashboards that make your numbers easy to act on.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
 
-<!--<section class="section">-->
-<!--  <div class="container">-->
-<!--    <div class="section-head reveal">-->
-<!--      <span class="eyebrow"><i class="fa-solid fa-star"></i> Why choose us</span>-->
-<!--      <h2>Built for businesses that can't afford payroll mistakes</h2>-->
-<!--    </div>-->
-<!--    <div class="grid grid-3">-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-bolt"></i></div><h3>Fast Payroll</h3><p>Pay runs processed well ahead of deadlines, every single cycle.</p></div>-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-lock"></i></div><h3>Secure Data</h3><p>Bank-level encryption protects every payroll and financial record.</p></div>-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-user-tie"></i></div><h3>Expert Team</h3><p>Real accountants and payroll specialists, not a call center.</p></div>-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>Compliance</h3><p>A 100% compliance guarantee on every filing we submit.</p></div>-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-headset"></i></div><h3>24/7 Support</h3><p>Live help whenever payroll or bookkeeping questions come up.</p></div>-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-sack-dollar"></i></div><h3>Affordable Pricing</h3><p>Fixed monthly plans — no hourly billing surprises, ever.</p></div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
 
 
 
@@ -941,198 +816,43 @@ PGCONTENT;
 PGCONTENT;
 	$content_accounting_services = <<<'PGCONTENT'
 
-<!--<section class="hero">-->
-<!--  <div class="hero-ring"></div>-->
-<!--  <div class="container hero-grid">-->
-<!--    <div class="reveal in">-->
-      <!--<span class="eyebrow"><i class="fa-solid fa-circle-check"></i> Trusted by 480+ growing businesses</span>-->
-<!--      <h1> Pro Assist</h1>-->
-<!--      <p class="lead">Meet Your New AI-Powered Financial Assistant </p>-->
-<!--      <div class="hero-actions">-->
-<!--        <a href="/contact/" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>-->
-<!--        <a href="/contact/" class="btn btn-outline">Contact Us</a>-->
-<!--      </div>-->
-      <!--<div class="hero-stats">-->
-      <!--  <div class="stat"><b><span class="counter" data-target="12" data-suffix="+">0</span> yrs</b><span>In Practice</span></div>-->
-      <!--  <div class="stat"><b><span class="counter" data-target="480" data-suffix="+">0</span></b><span>Businesses Served</span></div>-->
-      <!--  <div class="stat"><b><span class="counter" data-target="99.8" data-suffix="%">0</span></b><span>On-Time Payroll Rate</span></div>-->
-      <!--  <div class="stat"><b>$<span class="counter" data-target="180" data-suffix="M+">0</span></b><span>Payroll Processed / yr</span></div>-->
-      <!--</div>-->
-<!--    </div>-->
-<!--    <div class="hero-visual reveal in">-->
-<!--      <div class="paycard main">-->
-        <!--<div class="pc-top"><span>Direct Deposit</span><span class="pc-logo"></span></div>-->
-        <!--<div class="pc-amount">$4,215.60</div>-->
-        <!--<div class="pc-row"><span>Pay period</span><span>Jun 16 – Jun 30</span></div>-->
-        <!--<div class="pc-row"><span>Taxes withheld</span><span>$1,084.20</span></div>-->
-        <!--<div class="pc-badge"><i class="fa-solid fa-shield-halved"></i> Filed &amp; compliant</div>-->
-<!--      </div>-->
-      <!--<div class="floaty f1"><i class="fa-solid fa-chart-line" style="color:var(--c-accent);"></i> Cash flow +18%</div>-->
-      <!--<div class="floaty f2"><i class="fa-solid fa-clock" style="color:var(--c-secondary);"></i> Books closed on time</div>-->
-      <!--<div class="floaty f3"><i class="fa-solid fa-users" style="color:var(--c-primary);"></i> 42 employees paid</div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
-<section class="hero">
+<section class="hero hero-sm service-hero">
   <div class="hero-ring"></div>
-  <div class="container hero-grid">
-    <div class="reveal in">
+  <div class="container hero-grid reveal in">
+    <div class="hero-copy">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-chart-pie"></i> Accounting Services</span>
       <h1>Accounting Services That Keep Your Business On Track</h1>
-      <p class="lead">We provide end-to-end accounting support – from financial statements to payables, receivables, and month-end/year-end closing – so you always have clear, reliable numbers for better decisions.</p>
+      <p>We provide end-to-end accounting support from financial statements to payables, receivables, and month-end/year-end closing, so you always have clear numbers for better decisions.</p>
       <div class="hero-actions">
         <a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="/contact/" class="btn btn-outline">Live Help </a>
+        <a href="/contact/" class="btn btn-outline">Live Help</a>
       </div>
     </div>
-
-    <div class="hero-visual reveal in">
-      <div class="collage-item ci-1">
-        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=600&auto=format&fit=crop" alt="Product screen preview">
-      </div>
-      <div class="collage-item ci-2">
-        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop" alt="Business specialist on a call">
-      </div>
-      <div class="collage-item ci-3">
-        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop" alt="Client reviewing finances at home">
-      </div>
-      
-    </div>
-
-    <!-- floating search pill, overlapping both columns -->
-    <!--<div class="hero-search-float reveal in">-->
-    <!--  <span class="hero-search-icon"><i class="fa-solid fa-asterisk"></i></span>-->
-    <!--  <input type="text" placeholder="Type or ask something">-->
-    <!--  <button type="button" aria-label="Submit"><i class="fa-solid fa-arrow-right"></i></button>-->
-    <!--</div>-->
+    <div class="hero-visual service-hero-visual" aria-hidden="true"><div class="collage-item ci-1 service-shot service-shot-muted"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-2 service-shot service-shot-focus"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-3 service-shot service-shot-side"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div></div>
   </div>
 </section>
 
-
- <section class="logo-strip">
+<section class="logo-strip">
   <div class="container">
-    <p style="font-size: 16px;
-    text-align: center;
-    font-weight: 300;
-    color: #111;">Managing business finances requires more than recording transactions—it requires accurate reporting, financial analysis, and ongoing compliance. Assist Pro accounting services help businesses maintain organized financial records while providing valuable insights that support informed decision-making. Whether you're a startup, a growing company, or an established business, our accounting experts ensure every financial detail is managed efficiently so you can gain complete visibility into your business performance.</p>
-   
+    <p style="font-size:16px;text-align:center;font-weight:300;color:#111;">Managing business finances requires more than recording transactions. Assist Pro accounting services help businesses maintain organized financial records, accurate reporting, financial analysis, and ongoing compliance so you can make confident decisions.</p>
   </div>
-  </section>
+</section>
 
 <section class="pa-section">
   <div class="container">
-    <div class="section-head reveal">
+    <div class="section-head reveal in">
       <span class="eyebrow"><i class="fa-solid fa-layer-group"></i> What We Offer</span>
       <h2>Accounting Assist Pro Services</h2>
     </div>
-
     <div class="pa-grid">
-
-      <div class="pa-card reveal">
-        <div class="pa-head pa-bookkeeping">
-          <div class="pa-icon"><i class="fa-solid fa-file-lines"></i></div>
-          <h3>Financial Statements</h3>
-        </div>
-        <div class="pa-body">
-          <p>We prepare accurate and easy-to-understand financial statements that give you a complete picture of your company's financial health. Our reports help business owners evaluate performance, satisfy lenders, prepare for tax filing, and make strategic business decisions.</p>
-          <ul>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Profit &amp; Loss Statements</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Balance Sheets</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Cash Flow Statements</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Owner's Equity Statements</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Customized Financial Reports</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="pa-card reveal">
-        <div class="pa-head pa-accounting">
-          <div class="pa-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-          <h3>Accounts Payable</h3>
-        </div>
-        <div class="pa-body">
-          <p>Managing vendor payments accurately is essential for maintaining strong supplier relationships and healthy cash flow. Our Accounts Payable service ensures every invoice is processed correctly and payments are made on time.</p>
-          <ul>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Invoice Processing</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Vendor Account Management</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Payment Scheduling</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Expense Tracking</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Duplicate Payment Prevention</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Accounts Reconciliation</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="pa-card reveal">
-        <div class="pa-head pa-payroll">
-          <div class="pa-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-          <h3>Accounts Receivable</h3>
-        </div>
-        <div class="pa-body">
-          <p>Our Accounts Receivable services help businesses track outstanding invoices, improve collections, and maintain a healthy cash flow. We ensure customer payments are monitored and recorded accurately while reducing delays in receivables.</p>
-          <ul>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Customer Invoice Management</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Payment Tracking</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Outstanding Balance Monitoring</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Aging Reports</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Customer Account Reconciliation</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Collection Follow-Ups</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="pa-card reveal">
-        <div class="pa-head pa-tax">
-          <div class="pa-icon"><i class="fa-solid fa-calendar-check"></i></div>
-          <h3>Month-End &amp; Year-End Closing</h3>
-        </div>
-        <div class="pa-body">
-          <p>Closing your books at the end of each month and fiscal year is essential for maintaining accurate financial records. Our accounting professionals ensure every transaction is reviewed, reconciled, and finalized according to accounting standards.</p>
-          <ul>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Bank Reconciliation</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Journal Entry Review</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Account Reconciliation</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Expense Verification</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Revenue Verification</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Financial Statement Preparation</li>
-            <li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Year-End Adjustments</li>
-          </ul>
-        </div>
-      </div>
-
+      <div class="pa-card reveal in"><div class="pa-head pa-bookkeeping"><div class="pa-icon"><i class="fa-solid fa-file-lines"></i></div><h3>Financial Statements</h3></div><div class="pa-body"><ul><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Profit &amp; Loss Statements</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Balance Sheets</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Cash Flow Statements</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Customized Financial Reports</li></ul></div></div>
+      <div class="pa-card reveal in"><div class="pa-head pa-accounting"><div class="pa-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div><h3>Accounts Payable</h3></div><div class="pa-body"><ul><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Invoice Processing</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Vendor Account Management</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Payment Scheduling</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Accounts Reconciliation</li></ul></div></div>
+      <div class="pa-card reveal in"><div class="pa-head pa-payroll"><div class="pa-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div><h3>Accounts Receivable</h3></div><div class="pa-body"><ul><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Customer Invoice Management</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Payment Tracking</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Aging Reports</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Collection Follow-Ups</li></ul></div></div>
+      <div class="pa-card reveal in"><div class="pa-head pa-tax"><div class="pa-icon"><i class="fa-solid fa-calendar-check"></i></div><h3>Month-End &amp; Year-End Closing</h3></div><div class="pa-body"><ul><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Bank Reconciliation</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Journal Entry Review</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Account Reconciliation</li><li><span class="li-dot"><i class="fa-solid fa-check"></i></span> Financial Statement Preparation</li></ul></div></div>
     </div>
   </div>
 </section>
 
-<!--<section class="section">-->
-<!--  <div class="container split">-->
-<!--    <div class="split-media reveal">-->
-<!--      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop" alt="Accounting team reviewing financial reports together">-->
-<!--      <div class="stat-chip">-->
-<!--        <div class="card-icon" style="margin-bottom:0;"><i class="fa-solid fa-award"></i></div>-->
-<!--        <div><div class="num">12+ yrs</div><div class="lbl">In practice</div></div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="reveal">-->
-      <!--<span class="eyebrow"><i class="fa-solid fa-building"></i> Who we are</span>-->
-<!--      <h2>Industry- We Serve </h2>-->
-      
-<!--<ul class="check-list">-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Small Businesses</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Startups</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Healthcare</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Real Estate</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Construction</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Retail</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>E-commerce</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Manufacturing</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Professional Services</b></li>-->
-<!--    <li><i class="fa-solid fa-circle-check"></i> <b>Nonprofits</b></li>-->
-<!--</ul>-->
-<!--      <a href="/about/" class="btn btn-primary mt-40">Learn Our Story <i class="fa-solid fa-arrow-right"></i></a>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
 <section class="section section-alt">
   <div class="container">
     <div class="section-head reveal in">
@@ -1207,40 +927,7 @@ PGCONTENT;
   </div>
 </section>
 
-<!--<section class="section section-alt">-->
-<!--  <div class="container">-->
-<!--    <div class="section-head reveal">-->
-<!--      <span class="eyebrow"><i class="fa-solid fa-layer-group"></i> What We Offer</span>-->
-<!--      <h2>Services built around your finance calendar</h2>-->
-<!--      <p>Every engagement starts with the essentials businesses actually need, month after month.</p>-->
-<!--    </div>-->
-<!--    <div class="grid grid-3">-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-money-check-dollar"></i></div><h3>Payroll Management</h3><p>Accurate, on-time pay runs with direct deposit, payslips, and full tax compliance.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div><h3>Tax Filing</h3><p>Business and payroll tax filings prepared and submitted correctly, every deadline.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>Employee Benefits</h3><p>Benefits deductions and contributions managed accurately inside every pay cycle.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>HR Compliance</h3><p>Stay ahead of federal, state, and local labor law changes without the research.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-book"></i></div><h3>Bookkeeping</h3><p>Daily transaction recording, bank reconciliation, and clean general ledgers.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--      <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-chart-pie"></i></div><h3>Financial Reporting</h3><p>Monthly statements and dashboards that make your numbers easy to act on.</p><a href="/services/" class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
 
-<!--<section class="section">-->
-<!--  <div class="container">-->
-<!--    <div class="section-head reveal">-->
-<!--      <span class="eyebrow"><i class="fa-solid fa-star"></i> Why choose us</span>-->
-<!--      <h2>Built for businesses that can't afford payroll mistakes</h2>-->
-<!--    </div>-->
-<!--    <div class="grid grid-3">-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-bolt"></i></div><h3>Fast Payroll</h3><p>Pay runs processed well ahead of deadlines, every single cycle.</p></div>-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-lock"></i></div><h3>Secure Data</h3><p>Bank-level encryption protects every payroll and financial record.</p></div>-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-user-tie"></i></div><h3>Expert Team</h3><p>Real accountants and payroll specialists, not a call center.</p></div>-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>Compliance</h3><p>A 100% compliance guarantee on every filing we submit.</p></div>-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-headset"></i></div><h3>24/7 Support</h3><p>Live help whenever payroll or bookkeeping questions come up.</p></div>-->
-<!--      <div class="feature card reveal"><div class="card-icon"><i class="fa-solid fa-sack-dollar"></i></div><h3>Affordable Pricing</h3><p>Fixed monthly plans — no hourly billing surprises, ever.</p></div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
 
 
 
