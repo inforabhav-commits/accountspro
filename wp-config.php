@@ -28,10 +28,12 @@ define( 'WP_DEBUG_DISPLAY', false );
 define( 'DB_NAME', 'u558618626_NgH3X' );
 
 /** Database username */
-define( 'DB_USER', 'u558618626_NwQw5' );
+// define( 'DB_USER', 'u558618626_NwQw5' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '$8HN*xIrLU' );
+// define( 'DB_PASSWORD', '$8HN*xIrLU' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', '127.0.0.1' );
