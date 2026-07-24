@@ -93,10 +93,6 @@ function payroll_services_admin_notice() {
 add_action( 'admin_notices', 'payroll_services_admin_notice' );
 
 function payroll_services_ensure_platform_pages() {
-    if ( ! current_user_can( 'manage_options' ) ) {
-        return;
-    }
-
     $pages = [
         'cloud-hosting-services' => [ 'title' => 'Cloud Hosting Services', 'template' => 'page-templates/template-cloud-hosting-services.php' ],
         'quickbooks'             => [ 'title' => 'QuickBooks', 'template' => 'page-templates/template-quickbooks.php' ],
@@ -133,7 +129,7 @@ function payroll_services_ensure_platform_pages() {
         flush_rewrite_rules();
     }
 }
-add_action( 'admin_init', 'payroll_services_ensure_platform_pages' );
+add_action( 'init', 'payroll_services_ensure_platform_pages', 20 );
 
 function payroll_services_clean_accounting_process_step( $content ) {
     if ( ! is_page( 'accounting-services' ) ) {
