@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PAYROLL_AUTO_PAGES_CONTENT_VERSION', '20260724-home-hero-process-1' );
+define( 'PAYROLL_AUTO_PAGES_CONTENT_VERSION', '20260724-six-hero-collage-1' );
 
 add_action( 'init', 'payroll_auto_create_pages', 20 );
 
@@ -2564,12 +2564,16 @@ PGCONTENT;
 
 	$content_cloud_hosting_services = <<<'PGCONTENT'
 
-<section class="hero hero-sm">
-  <div class="container reveal in">
-    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-cloud"></i> Cloud Hosting Services</span>
-    <h1>Secure cloud hosting for accounting, payroll, and business apps</h1>
-    <p>Run your essential finance systems from a reliable cloud environment with managed support, backups, and protected access.</p>
-    <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+<section class="hero hero-sm service-hero">
+  <div class="hero-ring"></div>
+  <div class="container hero-grid reveal in">
+    <div class="hero-copy">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-cloud"></i> Cloud Hosting Services</span>
+      <h1>Secure cloud hosting for accounting, payroll, and business apps</h1>
+      <p>Run your essential finance systems from a reliable cloud environment with managed support, backups, and protected access.</p>
+      <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+    </div>
+    <div class="hero-visual service-hero-visual" aria-hidden="true"><div class="collage-item ci-1 service-shot service-shot-muted"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-2 service-shot service-shot-focus"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-3 service-shot service-shot-side"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div></div>
   </div>
 </section>
 
@@ -2625,12 +2629,16 @@ PGCONTENT;
 
 	$content_quickbooks_services = <<<'PGCONTENT'
 
-<section class="hero hero-sm">
-  <div class="container reveal in">
-    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-q"></i> QuickBooks Services</span>
-    <h1>QuickBooks setup, cleanup, bookkeeping, and payroll support</h1>
-    <p>Get your QuickBooks file organized, accurate, and useful for decisions, from setup and migration to monthly reporting.</p>
-    <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+<section class="hero hero-sm service-hero">
+  <div class="hero-ring"></div>
+  <div class="container hero-grid reveal in">
+    <div class="hero-copy">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-q"></i> QuickBooks Services</span>
+      <h1>QuickBooks setup, cleanup, bookkeeping, and payroll support</h1>
+      <p>Get your QuickBooks file organized, accurate, and useful for decisions, from setup and migration to monthly reporting.</p>
+      <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+    </div>
+    <div class="hero-visual service-hero-visual" aria-hidden="true"><div class="collage-item ci-1 service-shot service-shot-muted"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-2 service-shot service-shot-focus"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-3 service-shot service-shot-side"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div></div>
   </div>
 </section>
 
@@ -2686,12 +2694,16 @@ PGCONTENT;
 
 $content_xero_services = <<<'PGCONTENT'
 
-<section class="hero hero-sm">
-  <div class="container reveal in">
-    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-x"></i> Xero Services</span>
-    <h1>Xero bookkeeping, setup, migration, and reporting support</h1>
-    <p>Keep your Xero account clean, reconciled, and connected to the tools your business depends on.</p>
-    <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+<section class="hero hero-sm service-hero">
+  <div class="hero-ring"></div>
+  <div class="container hero-grid reveal in">
+    <div class="hero-copy">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-x"></i> Xero Services</span>
+      <h1>Xero bookkeeping, setup, migration, and reporting support</h1>
+      <p>Keep your Xero account clean, reconciled, and connected to the tools your business depends on.</p>
+      <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+    </div>
+    <div class="hero-visual service-hero-visual" aria-hidden="true"><div class="collage-item ci-1 service-shot service-shot-muted"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-2 service-shot service-shot-focus"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-3 service-shot service-shot-side"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div></div>
   </div>
 </section>
 
@@ -2747,15 +2759,19 @@ PGCONTENT;
 
 	$content_sage = <<<'PGCONTENT'
 
-<section class="hero hero-sm">
-  <div class="container reveal in">
-    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-leaf"></i> Sage Services</span>
-    <h1>Assist Pro Sage Services</h1>
-    <p>Expert Sage solutions for small businesses, growing companies, and enterprises.</p>
-    <div class="hero-actions">
-      <a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a>
-      <a href="/contact/" class="btn btn-outline">Live Help</a>
+<section class="hero hero-sm service-hero">
+  <div class="hero-ring"></div>
+  <div class="container hero-grid reveal in">
+    <div class="hero-copy">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-leaf"></i> Sage Services</span>
+      <h1>Assist Pro Sage Services</h1>
+      <p>Expert Sage solutions for small businesses, growing companies, and enterprises.</p>
+      <div class="hero-actions">
+        <a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="/contact/" class="btn btn-outline">Live Help</a>
+      </div>
     </div>
+    <div class="hero-visual service-hero-visual" aria-hidden="true"><div class="collage-item ci-1 service-shot service-shot-muted"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-2 service-shot service-shot-focus"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-3 service-shot service-shot-side"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div></div>
   </div>
 </section>
 
@@ -2813,12 +2829,16 @@ PGCONTENT;
 
 	$content_zoho_books = <<<'PGCONTENT'
 
-<section class="hero hero-sm">
-  <div class="container reveal in">
-    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-book-open"></i> Zoho Books Assistance</span>
-    <h1>Zoho Books Assistance for Your Business</h1>
-    <p>End-to-end Zoho Books support for accurate and efficient financial management.</p>
-    <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Contact Us <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+<section class="hero hero-sm service-hero">
+  <div class="hero-ring"></div>
+  <div class="container hero-grid reveal in">
+    <div class="hero-copy">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-book-open"></i> Zoho Books Assistance</span>
+      <h1>Zoho Books Assistance for Your Business</h1>
+      <p>End-to-end Zoho Books support for accurate and efficient financial management.</p>
+      <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Contact Us <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+    </div>
+    <div class="hero-visual service-hero-visual" aria-hidden="true"><div class="collage-item ci-1 service-shot service-shot-muted"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-2 service-shot service-shot-focus"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-3 service-shot service-shot-side"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div></div>
   </div>
 </section>
 
@@ -2850,12 +2870,16 @@ PGCONTENT;
 
 	$content_netsuite = <<<'PGCONTENT'
 
-<section class="hero hero-sm">
-  <div class="container reveal in">
-    <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-cubes"></i> NetSuite Services</span>
-    <h1>Unlock the Full Potential of NetSuite</h1>
-    <p>We help you optimize NetSuite for better performance, accuracy, and growth.</p>
-    <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Contact Us <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+<section class="hero hero-sm service-hero">
+  <div class="hero-ring"></div>
+  <div class="container hero-grid reveal in">
+    <div class="hero-copy">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-cubes"></i> NetSuite Services</span>
+      <h1>Unlock the Full Potential of NetSuite</h1>
+      <p>We help you optimize NetSuite for better performance, accuracy, and growth.</p>
+      <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Contact Us <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
+    </div>
+    <div class="hero-visual service-hero-visual" aria-hidden="true"><div class="collage-item ci-1 service-shot service-shot-muted"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-2 service-shot service-shot-focus"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div><div class="collage-item ci-3 service-shot service-shot-side"><img src="/wp-content/themes/payroll-servicess/assets/images/service-hero-finance.jpg" alt="" loading="eager"></div></div>
   </div>
 </section>
 
