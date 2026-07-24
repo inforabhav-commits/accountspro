@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PAYROLL_AUTO_PAGES_CONTENT_VERSION', '20260724-hero-steps-1' );
+define( 'PAYROLL_AUTO_PAGES_CONTENT_VERSION', '20260724-home-hero-process-1' );
 
 add_action( 'init', 'payroll_auto_create_pages', 20 );
 
@@ -2569,6 +2569,7 @@ PGCONTENT;
     <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-cloud"></i> Cloud Hosting Services</span>
     <h1>Secure cloud hosting for accounting, payroll, and business apps</h1>
     <p>Run your essential finance systems from a reliable cloud environment with managed support, backups, and protected access.</p>
+    <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
   </div>
 </section>
 
@@ -2629,6 +2630,7 @@ PGCONTENT;
     <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-q"></i> QuickBooks Services</span>
     <h1>QuickBooks setup, cleanup, bookkeeping, and payroll support</h1>
     <p>Get your QuickBooks file organized, accurate, and useful for decisions, from setup and migration to monthly reporting.</p>
+    <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
   </div>
 </section>
 
@@ -2689,6 +2691,7 @@ $content_xero_services = <<<'PGCONTENT'
     <span class="eyebrow" style="background:rgba(255,255,255,0.15);color:#fff;"><i class="fa-solid fa-x"></i> Xero Services</span>
     <h1>Xero bookkeeping, setup, migration, and reporting support</h1>
     <p>Keep your Xero account clean, reconciled, and connected to the tools your business depends on.</p>
+    <div class="hero-actions"><a href="/contact/" class="btn btn-primary">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a><a href="/contact/" class="btn btn-outline">Live Help</a></div>
   </div>
 </section>
 
